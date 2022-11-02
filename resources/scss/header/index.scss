@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+.main-menu {
+    ul {
+        li {
+            padding: 0 20px;
+            &:last-child {
+                padding-right: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
