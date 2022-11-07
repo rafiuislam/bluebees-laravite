@@ -20,56 +20,55 @@
             <h1 class="d-flex justify-content-center align-self-center">
                 Our Services
             </h1>
-            <div
-                class="service_container d-flex justify-content-center align-items-between pt-5"
-            >
-                <div
-                    class="service_item d-flex flex-column justify-content-between align-items-center"
-                >
-                    <img src="../../images/ui-ux.png" alt="ui-ux" />
-                    <h3 class="text-center pt-4">UI UX Design</h3>
-                    <p class="text-center pt-4">
-                        We are a team of UI/UX designers who are passionate
-                        about creating beautiful and functional designs.
-                    </p>
-                </div>
-                <div
-                    class="service_item d-flex flex-column justify-content-between align-items-center"
-                >
-                    <img src="../../images/web-app.png" alt="web-app" />
-                    <h3 class="text-center pt-4">
-                        Web Application Development
+            <div class="service_container">
+                <div>
+                    <img src="../../images/ui-ux-design-icon.png" alt="ui-ux" />
+                    <h3 class="text-center">
+                        UI UX <br />
+                        Design
                     </h3>
-                    <p class="text-center pt-4">
+                    <p>We are a team of UI/UX designers who are passionate</p>
+                </div>
+                <div>
+                    <img
+                        src="../../images/web-application-icon.png"
+                        alt="web-app"
+                    />
+                    <h3>
+                        Web Application<br />
+                        Development
+                    </h3>
+                    <p>
                         We are a team of UI/UX designers who are passionate
-                        about creating beautiful and functional designs.
+                        functional designs.
                     </p>
                 </div>
-                <div
-                    class="service_item d-flex flex-column justify-content-between align-items-center"
-                >
+                <div>
                     <img
                         src="../../images/custom-software.png"
                         alt="custom-software"
                     />
-                    <h3 class="text-center pt-4">
-                        Custom Software Development
+                    <h3>
+                        Custom Software <br />
+                        Development
                     </h3>
-                    <p class="text-center pt-4">
+                    <p>
                         We are a team of UI/UX designers who are passionate
-                        about creating beautiful and functional designs.
+                        functional designs.
                     </p>
                 </div>
-                <div
-                    class="service_item d-flex flex-column justify-content-between align-items-center"
-                >
-                    <img src="../../images/mobile-app.png" alt="mobile-app" />
-                    <h3 class="text-center pt-4">
-                        Mobile Application Development
+                <div>
+                    <img
+                        src="../../images/Mobile-Application.png"
+                        alt="mobile-app"
+                    />
+                    <h3>
+                        Mobile Application <br />
+                        Development
                     </h3>
-                    <p class="text-center pt-4">
-                        We are a team of UI/UX designers who are passionate
-                        about creating beautiful and functional designs.
+                    <p>
+                        We are a team of UI/UX designers about creating
+                        beautiful and functional designs.
                     </p>
                 </div>
             </div>
@@ -77,7 +76,7 @@
 
         <!-- project section -->
 
-        <div class="project pb-5">
+        <div class="project">
             <div class="project_container">
                 <div class="project_item">
                     <h1
@@ -95,27 +94,27 @@
                     </p>
                 </div>
                 <img
-                    src="../../images/jinx.jpg"
+                    src="../../images/project-pic-1.jpg"
                     class="image_project"
                     alt="project"
                 />
                 <img
-                    src="../../images/jinx.jpg"
+                    src="../../images/project-pic-2.jpg"
                     class="image_project"
                     alt="project"
                 />
                 <img
-                    src="../../images/jinx.jpg"
+                    src="../../images/project-pic-3.jpg"
                     class="image_project"
                     alt="project"
                 />
                 <img
-                    src="../../images/jinx.jpg"
+                    src="../../images/project-pic-4.jpg"
                     class="image_project"
                     alt="project"
                 />
                 <img
-                    src="../../images/jinx.jpg"
+                    src="../../images/project-pic-5.jpg"
                     class="image_project"
                     alt="project"
                 />
