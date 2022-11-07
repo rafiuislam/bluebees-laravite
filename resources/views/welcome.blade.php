@@ -15,10 +15,6 @@
     <body class="antialiased">
         <div id="app"></div>
 
-        @vite(["resources/css/app.css",
-                "resources/css/bootstrap.min.css",
-                "resources/scss/app.scss",
-                "resources/js/app.js",
-                "resources/js/bootstrap.min.js"])
+        @vite(["resources/js/bootstrap.min.js","resources/js/app.js","resources/css/bootstrap.min.css","resources/scss/style.scss"])
     </body>
 </html>

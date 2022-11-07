@@ -1,12 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@use "../app/links" as *;
+.header-wrap {
+    padding-top: 35px;
+    position: relative;
+    z-index: 1;
+}
 .main-menu {
     ul {
         li {
             padding: 0 20px;
+            @include font(white, 17, 26, false);
             &:last-child {
                 padding-right: 0;
             }
             a {
+                color: map-get($colors, white);
                 text-decoration: none;
             }
         }

@@ -1,7 +1,7 @@
 <template>
     <header class="header-wrap">
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between align-items-center">
                 <h1>
                     <router-link to="/">
                         <img src="../../images/logo.png" alt="logo" />

@@ -1,0 +1,18 @@
+@use "../app/links" as *;
+
+// .container-wrap {
+//     background-color: blue;
+//     color: map-get($colors, white);
+// }
+
+// .header-wrap {
+//     padding-top: 35px;
+//     position: relative;
+//     z-index: 1;
+// }
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
+}
