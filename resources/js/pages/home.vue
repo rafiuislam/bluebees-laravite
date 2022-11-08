@@ -16,7 +16,7 @@
 
         <!-- service section -->
 
-        <div class="service pb-5">
+        <div class="service">
             <h1 class="d-flex justify-content-center align-self-center">
                 Our Services
             </h1>
@@ -75,6 +75,11 @@
         </div>
 
         <!-- project section -->
+        <!-- <div class="">
+            <div>
+
+            </div>
+        </div> -->
 
         <div class="project">
             <div class="project_container">
@@ -123,12 +128,12 @@
 
         <!-- Team section -->
 
-        <div class="team pb-5">
+        <div class="team">
             <h1 class="d-flex justify-content-center align-self-center">
                 Our Team
             </h1>
 
-            <p class="text-center pt-4">
+            <p>
                 We are a team of UI/UX designers who are passionate about
                 creating beautiful and functional designs. viverra maecenas
                 accumsan lacus vel facilisis. Dolor sit amet, consectetur
@@ -141,8 +146,8 @@
             <div
                 class="service_item d-flex flex-column justify-content-start align-items-center"
             >
-                <h2 class="">BlueBees AI</h2>
-                <p class="text-center pt-4">
+                <h2>BlueBees AI</h2>
+                <p>
                     We are a team of UI/UX designers who are passionate about
                     creating beautiful and functional designs.
                 </p>
@@ -156,23 +161,55 @@
                 Our Clients
             </h1>
             <div class="client_container">
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" />
+                <div>
+                    <img src="../../images/01.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/02.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/03.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/04.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/05.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/06.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/07.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/08.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/09.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/10.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/11.png" alt="client" />
+                </div>
+                <div>
+                    <img src="../../images/12.png" alt="client" />
+                </div>
+
                 <!-- <img src="../../images/logo.png" alt="client" />
                 <img src="../../images/logo.png" alt="client" /> -->
             </div>
         </div>
 
         <!-- Review section -->
-        <div class="review"></div>
-        <h1 class="d-flex justify-content-center">Our Happy Customers</h1>
+        <div class="review">
+            <h1 class="d-flex justify-content-center">Our Happy Customers</h1>
+        </div>
+    </div>
+
+    <div class="footer_bg">
+        <!-- <img src="../../images/hero-rev-banner-.jpg" /> -->
     </div>
 </template>

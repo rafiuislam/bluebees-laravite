@@ -16,3 +16,14 @@
     align-items: center;
     // flex-wrap: wrap;
 }
+// d-flex justify-content-center align-self-center
+footer {
+    .copy {
+        background-color: #0d4e96;
+        color: map-get($colors, white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 22px 0;
+    }
+}

@@ -1,5 +1,4 @@
 <template>
-
     <footer class="footer">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
@@ -71,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center align-self-center">
+        <div class="copy">
             Copyright &copy; 2022 BlueBees AI. All rights Reserved.
         </div>
     </footer>
