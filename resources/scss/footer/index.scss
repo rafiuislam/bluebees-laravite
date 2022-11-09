@@ -1,23 +1,42 @@
 @use "../app/links" as *;
 
-// .container-wrap {
-//     background-color: blue;
-//     color: map-get($colors, white);
-// }
-
-// .header-wrap {
-//     padding-top: 35px;
-//     position: relative;
-//     z-index: 1;
-// }
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // flex-wrap: wrap;
-}
-// d-flex justify-content-center align-self-center
 footer {
+    max-width: 1370px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 75px;
+
+        .footer-col {
+            h4 {
+                font-family: "Nunito Sans", sans-serif;
+                @include font(fTitle, 22, 35, regular);
+                padding-bottom: 5px;
+            }
+            p {
+                font-family: "Nunito Sans", sans-serif;
+                @include font(primary, 16, 35, regular);
+            }
+            .icon {
+                display: flex;
+                img {
+                    margin-right: 18px;
+                }
+            }
+
+            .address {
+                font-family: "Nunito Sans", sans-serif;
+                @include font(primary, 16, 26, regular);
+                padding-bottom: 10px;
+            }
+
+            // li {
+
+            // }
+        }
+    }
+
     .copy {
         background-color: #0d4e96;
         color: map-get($colors, white);

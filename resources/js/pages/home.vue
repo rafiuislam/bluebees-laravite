@@ -12,8 +12,6 @@
         </div>
     </div>
     <div class="container">
-        <h1>Home Page</h1>
-
         <!-- service section -->
 
         <div class="service">
@@ -22,18 +20,25 @@
             </h1>
             <div class="service_container">
                 <div>
-                    <img src="../../images/ui-ux-design-icon.png" alt="ui-ux" />
-                    <h3 class="text-center">
+                    <div>
+                        <img
+                            src="../../images/ui-ux-design-icon.png"
+                            alt="ui-ux"
+                        />
+                    </div>
+                    <h3>
                         UI UX <br />
                         Design
                     </h3>
                     <p>We are a team of UI/UX designers who are passionate</p>
                 </div>
                 <div>
-                    <img
-                        src="../../images/web-application-icon.png"
-                        alt="web-app"
-                    />
+                    <div>
+                        <img
+                            src="../../images/web-application-icon.png"
+                            alt="web-app"
+                        />
+                    </div>
                     <h3>
                         Web Application<br />
                         Development
@@ -44,10 +49,12 @@
                     </p>
                 </div>
                 <div>
-                    <img
-                        src="../../images/custom-software.png"
-                        alt="custom-software"
-                    />
+                    <div>
+                        <img
+                            src="../../images/custom-software.png"
+                            alt="custom-software"
+                        />
+                    </div>
                     <h3>
                         Custom Software <br />
                         Development
@@ -58,10 +65,12 @@
                     </p>
                 </div>
                 <div>
-                    <img
-                        src="../../images/Mobile-Application.png"
-                        alt="mobile-app"
-                    />
+                    <div>
+                        <img
+                            src="../../images/Mobile-Application.png"
+                            alt="mobile-app"
+                        />
+                    </div>
                     <h3>
                         Mobile Application <br />
                         Development
@@ -75,27 +84,17 @@
         </div>
 
         <!-- project section -->
-        <!-- <div class="">
-            <div>
-
-            </div>
-        </div> -->
 
         <div class="project">
             <div class="project_container">
                 <div class="project_item">
-                    <h1
-                        class="d-flex justify-content-start align-self-center pb-4"
-                    >
-                        Our Project
-                    </h1>
+                    <h1>Our Project</h1>
                     <p>
                         Sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Quis
-                        ipsum suspendisse ultrices gravida. Risus commodo
-                        viverra maecenas accumsan lacus vel facilisis. Dolor sit
-                        amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
+                        ipsum suspendisse amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
                     </p>
                 </div>
                 <img
@@ -140,9 +139,7 @@
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
             </p>
-            <button class="justify-content-center btn">
-                See More Our Teamwork
-            </button>
+            <button class="btn">See More Our Teamwork</button>
             <div
                 class="service_item d-flex flex-column justify-content-start align-items-center"
             >
@@ -157,9 +154,7 @@
         <!-- Client section -->
 
         <div class="client">
-            <h1 class="d-flex justify-content-center align-self-center">
-                Our Clients
-            </h1>
+            <h1>Our Clients</h1>
             <div class="client_container">
                 <div>
                     <img src="../../images/01.png" alt="client" />
@@ -197,19 +192,15 @@
                 <div>
                     <img src="../../images/12.png" alt="client" />
                 </div>
-
-                <!-- <img src="../../images/logo.png" alt="client" />
-                <img src="../../images/logo.png" alt="client" /> -->
             </div>
         </div>
 
         <!-- Review section -->
         <div class="review">
-            <h1 class="d-flex justify-content-center">Our Happy Customers</h1>
+            <h1>Our Happy Customers</h1>
         </div>
-    </div>
-
-    <div class="footer_bg">
-        <!-- <img src="../../images/hero-rev-banner-.jpg" /> -->
+        <div class="footer_bg">
+            <!-- <img src="../../images/hero-rev-banner-.jpg" /> -->
+        </div>
     </div>
 </template>
