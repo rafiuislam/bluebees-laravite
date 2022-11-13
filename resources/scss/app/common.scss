@@ -78,22 +78,23 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield; /* Firefox */
 }
-.shadow-line {
-    width: 100%;
-    height: 4px;
-    margin: 50px 0;
-    border-radius: 80%;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+
+.title {
+    padding-bottom: 30px;
+    text-align: center;
+    @include font(title, 40, 46, regular);
+    font-family: "Khand", sans-serif;
 }
+
 ::-moz-selection {
     /* Code for Firefox */
     color: map-get($colors, white);
-    background-color: map-get($colors, brand);
+    background-color: map-get($colors, bg);
 }
 
 ::selection {
     color: map-get($colors, white);
-    background-color: map-get($colors, brand);
+    background-color: map-get($colors, bg);
 }
 
 @include media(container) {
