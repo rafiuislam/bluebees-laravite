@@ -12,6 +12,26 @@
             font-family: "Khand", sans-serif;
             @include font(title, 55, 66, regular);
         }
+        a {
+            position: relative;
+            color: map-get($colors, title);
+            text-decoration: none;
+        }
+        a:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            bottom: 20px;
+            border-radius: 10px;
+            background: #00abe5;
+            transition: all 0.4s ease;
+            z-index: -1;
+        }
+        a:hover:after {
+            bottom: 10px;
+        }
     }
 }
 
@@ -37,6 +57,12 @@
 
 .project-section {
     position: relative;
+    h1 {
+        font-family: "Khand", sans-serif;
+        @include font(title, 40, 36, regular);
+        padding-top: 78px;
+        padding-bottom: 38px;
+    }
     .project-left-bg {
         height: 371px;
         position: absolute;
@@ -44,6 +70,10 @@
         top: 0;
         width: calc(50% - 685px);
         background-color: #f8f8f8;
+    }
+    p {
+        @include font(primary, 16, 26, light);
+        padding-right: 22px;
     }
     .project-item {
         height: 100%;
@@ -55,33 +85,56 @@
             background-color: #f8f8f8;
             border-bottom-right-radius: 100px;
         }
+        &.last {
+            position: relative;
+        }
     }
+    padding-bottom: 68px;
 }
 
 .team {
     position: relative;
+    // padding-bottom: 100px;
+    margin-bottom: 100px;
+    p {
+        @include font(primary, 16, 26, light);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 30px;
+    }
     .team-right-bg {
-        height: 390px;
+        height: 586px;
         overflow: hidden;
         width: calc(50% - 685px);
         padding-bottom: 18px;
         position: absolute;
         right: 0;
         bottom: 0;
+        top: 620px;
         background-color: #cad8e8;
         &::after {
-            @include sudo(100%, 100%, left, 0, top, -18px, bg);
+            @include sudo(100%, 83%, left, 0, top, -18px, bg);
         }
     }
-    h1 {
-        font-family: "Khand", sans-serif;
-        @include font(title, 40, 36, regular);
-        padding-bottom: 42px;
+    .info {
+        padding: 110px 70px 0 210px;
+        h2 {
+            font-family: "Khand", sans-serif;
+            @include font(white, 40, 36, regular);
+            padding-bottom: 30px;
+        }
+        p {
+            font-family: "Nunito Sans", sans-serif;
+            @include font(white, 16, 26, regular);
+            text-align: start;
+            padding-bottom: 110px;
+        }
     }
-    p {
-        text-align: center;
-        padding-bottom: 36px;
-    }
+    // .team-img {
+
+    // }
+
     button {
         border: 1.5px solid #00abe5;
         border-radius: 0px 15px;
@@ -109,12 +162,22 @@
 .client {
     // background-color: #f8f8f8;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 230px;
+    .client-bg {
+        height: 558px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        z-index: -1;
+    }
 
     h1 {
         font-family: "Khand", sans-serif;
         @include font(title, 40, 36, regular);
-        padding-bottom: 69px;
+        padding-top: 105px;
+        padding-bottom: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,10 +188,9 @@
         justify-content: space-between;
         margin: 0 auto;
         max-width: 1370px;
-        padding: 0 42px;
 
         * {
-            flex: 1 1 100px;
+            flex: 1 1 200px;
             justify-content: center;
             align-items: center;
             padding: 10px;
