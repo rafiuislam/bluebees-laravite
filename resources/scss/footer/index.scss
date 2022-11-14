@@ -1,7 +1,6 @@
 @use "../app/links" as *;
 
 footer {
-    // max-width: 1370px;
     .container {
         display: flex;
         justify-content: space-between;
@@ -17,6 +16,9 @@ footer {
             p {
                 font-family: "Nunito Sans", sans-serif;
                 @include font(primary, 16, 35, regular);
+            }
+            p:hover {
+                color: #00abe5;
             }
             .icon {
                 display: flex;

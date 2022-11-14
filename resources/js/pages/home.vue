@@ -163,6 +163,9 @@
                                 class="image_project"
                                 alt="project"
                             />
+                            <div class="text-center project-work">
+                                <button class="btn">Veiw More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -220,7 +223,7 @@
                         </div>
                         <div class="col-md-5">
                             <img
-                                class="img-fluid"
+                                class="img-fluid img-icon"
                                 src="../../images/info.png"
                                 alt=""
                             />
@@ -236,7 +239,8 @@
     <div class="client">
         <div class="client-bg"></div>
         <div class="container">
-            <h1>Our Clients</h1>
+            <h1 class="title">Our Clients</h1>
+
             <div class="client_container">
                 <div>
                     <img src="../../images/01.png" alt="client" />
@@ -280,7 +284,7 @@
 
     <!-- Review section -->
     <div class="review">
-        <h1>Our Happy Customers</h1>
+        <h1 class="title">Our Happy Customers</h1>
     </div>
     <div class="footer_bg">
         <!-- <img src="../../images/hero-rev-banner-.jpg" /> -->

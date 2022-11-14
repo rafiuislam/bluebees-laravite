@@ -20,7 +20,7 @@
         a:after {
             content: "";
             position: absolute;
-            left: 0;
+            left: 2px;
             width: 100%;
             height: 10px;
             bottom: 20px;
@@ -38,21 +38,43 @@
 .service-section {
     padding: 50px 0 92px;
 
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 44%;
+        width: 0;
+        height: 6px;
+        top: -20px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 12%;
+    }
+
     .service-container {
         padding: 22px 0 0;
+
+        .service-item {
+            .service-icon {
+                padding-bottom: 48px;
+            }
+            h3 {
+                padding-bottom: 20px;
+                @include font(secondary, 22, 32, regular);
+            }
+            p {
+                @include font(primary, 16, 26, light);
+            }
+        }
     }
-}
-.service-item {
-    h3 {
-        padding-bottom: 20px;
-        @include font(secondary, 22, 32, regular);
-    }
-    p {
-        @include font(primary, 16, 26, light);
-    }
-}
-.service-icon {
-    padding-bottom: 48px;
 }
 
 .project-section {
@@ -64,7 +86,7 @@
         padding-bottom: 38px;
     }
     .project-left-bg {
-        height: 371px;
+        height: 375px;
         position: absolute;
         left: 0;
         top: 0;
@@ -78,24 +100,62 @@
     .project-item {
         height: 100%;
         padding-bottom: 30px;
-    }
-    .project-item-box {
-        height: 100%;
-        &.first {
-            background-color: #f8f8f8;
-            border-bottom-right-radius: 100px;
-        }
-        &.last {
+
+        .project-item-box {
+            height: 100%;
+            &.first {
+                background-color: #f8f8f8;
+                border-bottom-right-radius: 100px;
+            }
             position: relative;
+            .image_project {
+                height: 100%;
+                width: 100%;
+            }
+
+            .project-work {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+                button {
+                    background-color: #00abe5;
+                    border-radius: 0px 15px;
+                    padding: 10px 50px;
+                    font-family: "Nunito Sans", sans-serif;
+                    @include font(white, 17, 29, semi-bold);
+                }
+            }
         }
     }
+
     padding-bottom: 68px;
 }
 
 .team {
     position: relative;
-    // padding-bottom: 100px;
     margin-bottom: 100px;
+
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 45.5%;
+        width: 0;
+        height: 6px;
+        top: -20px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 9%;
+    }
     p {
         @include font(primary, 16, 26, light);
         display: flex;
@@ -104,17 +164,17 @@
         padding-bottom: 30px;
     }
     .team-right-bg {
-        height: 586px;
+        height: 486px;
         overflow: hidden;
         width: calc(50% - 685px);
         padding-bottom: 18px;
         position: absolute;
         right: 0;
         bottom: 0;
-        top: 620px;
+        top: 526px;
         background-color: #cad8e8;
         &::after {
-            @include sudo(100%, 83%, left, 0, top, -18px, bg);
+            @include sudo(100%, 100%, left, 0, top, -18px, bg);
         }
     }
     .info {
@@ -131,9 +191,6 @@
             padding-bottom: 110px;
         }
     }
-    // .team-img {
-
-    // }
 
     button {
         border: 1.5px solid #00abe5;
@@ -142,9 +199,16 @@
         font-family: "Nunito Sans", sans-serif;
         @include font(btn, 17, 28, regular);
     }
-    .team-work {
-        padding-bottom: 30px;
+    .container {
+        position: relative;
+        .team-img {
+            position: absolute;
+            padding-top: 30px;
+            padding-left: 10%;
+            z-index: -1;
+        }
     }
+
     .info-wrap {
         padding: 0 0 18px;
         margin: 0;
@@ -153,21 +217,47 @@
         border-bottom-left-radius: 230px;
     }
     .info-box {
+        margin-top: 275px;
         border-top-left-radius: 200px;
         border-bottom-left-radius: 200px;
         background-color: #0d4e96;
+
+        .img-icon {
+            padding-top: 40px;
+            padding-left: 10%;
+        }
     }
 }
 
 .client {
-    // background-color: #f8f8f8;
     position: relative;
     padding-bottom: 230px;
+
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 45%;
+        width: 0%;
+        height: 6px;
+        top: 80px;
+        border-radius: 10px;
+        background: #00abe5;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 10%;
+    }
     .client-bg {
         height: 558px;
         position: absolute;
         left: 0;
-        top: 0;
+        top: 10px;
         width: 100%;
         background-color: #f8f8f8;
         z-index: -1;
@@ -220,6 +310,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 45%;
+        width: 0;
+        height: 6px;
+        top: -20px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 10%;
     }
 }
 
