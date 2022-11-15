@@ -1,0 +1,60 @@
+@use "../links.scss" as *;
+.slider {
+    h1 {
+        font-family: "Khand", sans-serif;
+        @include font(title, 40, 36, regular);
+        padding-bottom: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 45%;
+        width: 0;
+        height: 6px;
+        top: -20px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 10%;
+    }
+    .slides {
+        display: flex;
+        .slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .image {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 70px;
+            }
+
+            .content {
+                .slide-text {
+                    @include font(primary, 16, 26, regular);
+                    width: 850px;
+                    height: auto;
+                    padding-bottom: 36px;
+                }
+            }
+        }
+    }
+}

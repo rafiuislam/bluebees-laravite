@@ -1,0 +1,74 @@
+@use "../links.scss" as *;
+.client {
+    position: relative;
+    padding-bottom: 230px;
+
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 45%;
+        width: 0%;
+        height: 6px;
+        top: 80px;
+        border-radius: 10px;
+        background: #00abe5;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 10%;
+    }
+    .client-bg {
+        height: 558px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 100%;
+        background-color: #f8f8f8;
+        z-index: -1;
+    }
+
+    h1 {
+        font-family: "Khand", sans-serif;
+        @include font(title, 40, 36, regular);
+        padding-top: 105px;
+        padding-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .client_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1370px;
+
+        * {
+            flex: 1 1 200px;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            img {
+                width: 150px;
+                height: auto;
+                padding: 30px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+        div {
+            display: flex;
+            border: 1px solid #ddd;
+            width: 232px;
+            height: 112px;
+        }
+    }
+}

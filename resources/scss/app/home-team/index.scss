@@ -1,0 +1,98 @@
+@use "../links.scss" as *;
+.team {
+    position: relative;
+    margin-bottom: 100px;
+
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 45.5%;
+        width: 0;
+        height: 6px;
+        top: -20px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 9%;
+    }
+    p {
+        @include font(primary, 16, 26, light);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .team-right-bg {
+        height: 486px;
+        overflow: hidden;
+        width: calc(50% - 685px);
+        padding-bottom: 18px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 526px;
+        background-color: #cad8e8;
+        &::after {
+            @include sudo(100%, 100%, left, 0, top, -18px, bg);
+        }
+    }
+    .info {
+        padding: 110px 70px 0 210px;
+        h2 {
+            font-family: "Khand", sans-serif;
+            @include font(white, 40, 36, regular);
+            padding-bottom: 30px;
+        }
+        p {
+            font-family: "Nunito Sans", sans-serif;
+            @include font(white, 16, 26, regular);
+            text-align: start;
+            padding-bottom: 110px;
+        }
+    }
+
+    button {
+        border: 1.5px solid #00abe5;
+        border-radius: 0px 15px;
+        padding: 18px 16px;
+        font-family: "Nunito Sans", sans-serif;
+        @include font(btn, 17, 28, regular);
+    }
+    .container {
+        position: relative;
+        .team-img {
+            position: absolute;
+            padding-top: 30px;
+            padding-left: 10%;
+            z-index: -1;
+        }
+    }
+
+    .info-wrap {
+        padding: 0 0 18px;
+        margin: 0;
+        background-color: #cad8e8;
+        border-top-left-radius: 230px;
+        border-bottom-left-radius: 230px;
+    }
+    .info-box {
+        margin-top: 275px;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+        background-color: #0d4e96;
+
+        .img-icon {
+            padding-top: 40px;
+            padding-left: 10%;
+        }
+    }
+}

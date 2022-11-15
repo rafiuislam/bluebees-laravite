@@ -1,0 +1,43 @@
+@use "../links.scss" as *;
+.service-section {
+    padding: 50px 0 92px;
+
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 44%;
+        width: 0;
+        height: 6px;
+        top: -20px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 12%;
+    }
+
+    .service-container {
+        padding: 22px 0 0;
+
+        .service-item {
+            .service-icon {
+                padding-bottom: 48px;
+            }
+            h3 {
+                padding-bottom: 20px;
+                @include font(secondary, 22, 32, regular);
+            }
+            p {
+                @include font(primary, 16, 26, light);
+            }
+        }
+    }
+}
