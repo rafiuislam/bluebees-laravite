@@ -1,5 +1,27 @@
 <template>
     <footer class="footer">
+        <!-- <footer>
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-twitch"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+            </ul>
+          </footer> -->
         <div class="container">
             <div class="footer-col">
                 <span>
@@ -8,18 +30,18 @@
                     </router-link>
                 </span>
                 <div class="social-links">
-                    <router-link to="#"
-                        ><i class="fab fa-facebook-f"></i
-                    ></router-link>
-                    <router-link to="#"
-                        ><i class="fab fa-twitter"></i
-                    ></router-link>
-                    <router-link to="#"
-                        ><i class="fab fa-instagram"></i
-                    ></router-link>
-                    <router-link to="#"
-                        ><i class="fab fa-linkedin-in"></i
-                    ></router-link>
+                    <a href="#" class="box">
+                        <i
+                            class="fa fa-facebook fa-2x"
+                            style="margin: 0px 5px"
+                        ></i>
+                    </a>
+                    <a href="#" class="box">
+                        <i class="fa fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="#" class="box">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
                 </div>
             </div>
             <div class="footer-col">
@@ -29,10 +51,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p>UI UX Design</p>
@@ -43,10 +65,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p>Web Application Development</p>
@@ -57,10 +79,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p>Custom Software Development</p>
@@ -71,10 +93,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p>Mobile Application Development</p>
@@ -90,10 +112,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p>About us</p>
@@ -104,10 +126,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p>Services</p>
@@ -118,10 +140,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p>Project</p>
@@ -132,10 +154,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="false"
+                                    ></i>
                                 </div>
 
                                 <p>Team</p>
@@ -146,10 +168,10 @@
                         <router-link to="#">
                             <div class="icon align-items-center">
                                 <div>
-                                    <img
-                                        src="../../images/footer-arrow-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p>Career</p>

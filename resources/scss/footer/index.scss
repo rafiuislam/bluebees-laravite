@@ -1,6 +1,8 @@
 @use "../app/links" as *;
 
 footer {
+    // padding-top: 50px;
+    background: #f1f7ff;
     .container {
         display: flex;
         justify-content: space-between;
@@ -8,6 +10,28 @@ footer {
         padding-bottom: 75px;
 
         .footer-col {
+            .social-links {
+                display: flex;
+                margin: 0 -14px;
+                flex-wrap: wrap;
+                padding-top: 40px;
+            }
+            .social-links a {
+                transition: 0.5s;
+            }
+            .social-links a:hover {
+                transform: translateY(-10px);
+                color: #00abe5;
+            }
+            .box {
+                margin: 10px;
+                padding: 10px 12px;
+                border-radius: 5px;
+                background-color: #e0e5ec;
+                box-shadow: 2px 2px 6px rgba(255, 255, 255, 0),
+                    2px 2px 6px rgba(0, 0, 0, 0.55);
+            }
+
             h4 {
                 font-family: "Nunito Sans", sans-serif;
                 @include font(fTitle, 22, 35, regular);
@@ -16,14 +40,28 @@ footer {
             p {
                 font-family: "Nunito Sans", sans-serif;
                 @include font(primary, 16, 35, regular);
+                transition: 0.5s;
             }
-            p:hover {
-                color: #00abe5;
-            }
+
             .icon {
                 display: flex;
+                transition: 0.8s;
+                i,
                 img {
                     margin-right: 18px;
+                }
+                i {
+                    font-size: 20px;
+                }
+            }
+            .icon:hover {
+                color: #00abe5;
+                p,
+                i {
+                    color: #00abe5;
+                }
+                i {
+                    font-size: 30px;
                 }
             }
 
@@ -32,10 +70,6 @@ footer {
                 @include font(primary, 16, 26, regular);
                 padding-bottom: 10px;
             }
-
-            // li {
-
-            // }
         }
     }
 
@@ -48,3 +82,93 @@ footer {
         padding: 22px 0;
     }
 }
+
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: flex-end;
+//   min-height: 100vh;
+//   background: #333;
+// }
+// footer {
+//   position: relative;
+//   width: 100%;
+//   height: 100px;
+//   background: #f1f7ff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
+
+// footer .social_icon {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 10px;
+//   flex-wrap: wrap;
+// }
+// footer .social_icon li {
+//   list-style: none;
+// }
+// footer .social_icon li a {
+//   font-size: 30px;
+//   color: rgb(39, 39, 39);
+//   margin: 0 10px;
+//   display: inline-block;
+//   transition: 0.5s;
+// }
+// footer .social_icon li a:hover {
+//   transform: translateY(-10px);
+// }
+// footer .wave {
+//   position: absolute;
+//   top: -100px;
+//   left: 0;
+//   width: 100%;
+//   height: 100px;
+//   background: url(wave.png);
+//   background-size: 1000px 100px;
+// }
+// footer .wave#wave1 {
+//   opacity: 1;
+//   bottom: 0;
+//   z-index: 1000;
+//   animation: animateWave 7s linear infinite;
+// }
+// footer .wave#wave2 {
+//   opacity: 0.5;
+//   bottom: 10px;
+//   z-index: 999;
+//   animation: animateWave_2 7s linear infinite;
+// }
+// footer .wave#wave3 {
+//   opacity: 0.2;
+//   bottom: 15px;
+//   z-index: 1000;
+//   animation: animateWave 6s linear infinite;
+// }
+// footer .wave#wave4 {
+//   opacity: 0.7;
+//   bottom: 20px;
+//   z-index: 999;
+//   animation: animateWave_2 6s linear infinite;
+// }
+
+// @keyframes animateWave {
+//   0% {
+//     background-position-x: 1000px;
+//   }
+//   100% {
+//     background-position-x: 0px;
+//   }
+// }
+// @keyframes animateWave_2 {
+//   0% {
+//     background-position: 0px;
+//   }
+//   100% {
+//     background-position: 1000px;
+//   }
+// }
