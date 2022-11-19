@@ -1,0 +1,80 @@
+@use "../app/links.scss" as *;
+.slider {
+    padding: 0 0 100px;
+    .title {
+        padding-bottom: 80px;
+        position: relative;
+        color: map-get($colors, title);
+        @include font(title, 40, 36, regular);
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 45%;
+            width: 0;
+            height: 6px;
+            top: -20px;
+            border-radius: 10px;
+            background: #f1f7ff;
+            transition: all 0.4s ease;
+            z-index: -1;
+        }
+        &:hover:after {
+            width: 10%;
+        }
+    }
+
+    .carousel__prev,
+    .carousel__next {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #eeeeee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .carousel__icon {
+        color: #00abe5;
+    }
+}
+
+.carousel {
+    ol {
+        li {
+            position: static;
+            .image {
+                width: 173px;
+                height: 173px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 68px;
+                    height: 68px;
+                    opacity: 0.5;
+                    transition: all 500ms;
+                }
+            }
+            &.carousel__slide--prev,
+            &.carousel__slide--next {
+                img {
+                    width: 110px;
+                    height: 110px;
+                }
+            }
+            &.carousel__slide--active {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .caption {
+        width: 845px;
+    }
+}

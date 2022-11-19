@@ -4,14 +4,4 @@
 @use "../app/home-project" as *;
 @use "../app/home-team" as *;
 @use "../app/home-client" as *;
-@use "../app/home-slider" as *;
-
-.footer_bg {
-    position: relative;
-    margin-bottom: 360px;
-    img {
-        position: absolute;
-        width: 100%;
-        z-index: -1;
-    }
-}
+@use "../home-slider" as *;
