@@ -30,6 +30,7 @@
             <Carousel
                 id="gallery"
                 :items-to-show="1"
+                :transition="500"
                 :wrap-around="true"
                 v-model="currentSlide"
             >

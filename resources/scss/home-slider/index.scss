@@ -6,6 +6,7 @@
         position: relative;
         color: map-get($colors, title);
         @include font(title, 40, 36, regular);
+        cursor: pointer;
 
         &:after {
             content: "";
@@ -75,6 +76,18 @@
         }
     }
     .caption {
-        width: 845px;
+        font-family: "Nunito Sans", sans-serif;
+        p {
+            padding-top: 75px;
+            width: 845px;
+            @include font(primary, 16, 27, regular);
+        }
+        h5 {
+            padding-top: 36px;
+            @include font(primary, 16, 27, semi-bold);
+            span {
+                color: #00abe5;
+            }
+        }
     }
 }

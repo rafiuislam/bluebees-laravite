@@ -28,7 +28,7 @@ footer {
                 margin: 10px;
                 padding: 10px 12px;
                 border-radius: 5px;
-                background-color: #e0e5ec;
+                background-color: white;
                 box-shadow: 2px 2px 6px rgba(255, 255, 255, 0),
                     2px 2px 6px rgba(0, 0, 0, 0.55);
             }
@@ -44,9 +44,11 @@ footer {
                 transition: 0.5s;
             }
 
-            .icon {
+            .icon,
+            .contact {
                 display: flex;
-                transition: 0.8s;
+                transition: 0.6s;
+
                 i,
                 img {
                     margin-right: 18px;
@@ -55,6 +57,7 @@ footer {
                     font-size: 20px;
                 }
             }
+
             .icon:hover {
                 color: #00abe5;
                 p,
@@ -63,6 +66,11 @@ footer {
                 }
                 i {
                     font-size: 30px;
+                }
+            }
+            .contact:hover {
+                i {
+                    font-size: 20px;
                 }
             }
 

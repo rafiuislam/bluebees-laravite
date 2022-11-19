@@ -16,10 +16,6 @@
 
     <!-- Review section -->
     <HomeSlider />
-
-    <section class="footer_bg">
-        <!-- <img src="../../images/hero-rev-banner-.jpg" /> -->
-    </section>
 </template>
 
 <script setup>

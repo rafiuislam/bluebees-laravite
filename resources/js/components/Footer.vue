@@ -5,7 +5,7 @@
             <div class="wave" id="wave2"></div>
         </div>
         <div class="container">
-            <div class="footer-col">
+            <div class="footer-col" style="width: 25%">
                 <span>
                     <router-link to="/">
                         <img src="../../images/logo.png" alt="logo" />
@@ -26,7 +26,7 @@
                     </a>
                 </div>
             </div>
-            <div class="footer-col">
+            <div class="footer-col" style="width: 28%">
                 <h4>Our Services</h4>
                 <ul>
                     <li>
@@ -87,7 +87,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col" style="width: 22%">
                 <h4>Important Link</h4>
                 <ul>
                     <li>
@@ -162,17 +162,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col" style="width: 24%">
                 <h4>Contact Info</h4>
                 <ul>
                     <li>
                         <a href="#">
-                            <div class="icon">
+                            <div class="icon contact">
                                 <div>
-                                    <img
-                                        src="../../images/location-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-home"
+                                        aria-hidden="false"
+                                    ></i>
                                 </div>
 
                                 <p class="address">
@@ -186,12 +186,12 @@
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon">
+                            <div class="icon contact">
                                 <div>
-                                    <img
-                                        src="../../images/mobile-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p class="address">
@@ -202,12 +202,12 @@
                     </li>
                     <li>
                         <a href="#">
-                            <div class="icon">
+                            <div class="icon contact">
                                 <div>
-                                    <img
-                                        src="../../images/email-icon.png"
-                                        alt="web-app"
-                                    />
+                                    <i
+                                        class="fa fa-envelope"
+                                        aria-hidden="true"
+                                    ></i>
                                 </div>
 
                                 <p class="address">support@bluebees.ai</p>
