@@ -4,12 +4,13 @@
             <h1 class="title">Our Services</h1>
             <div class="service-container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-12">
                         <div class="service-item text-center">
                             <div class="service-icon">
                                 <img
                                     src="../../images/ui-ux-design-icon.png"
                                     alt="ui-ux"
+                                    class="img-fluid"
                                 />
                             </div>
                             <h3>UI UX <br />Design</h3>
@@ -20,12 +21,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-12">
                         <div class="service-item text-center">
                             <div class="service-icon">
                                 <img
                                     src="../../images/web-application-icon.png"
                                     alt="web-application"
+                                    class="img-fluid"
                                 />
                             </div>
                             <h3>
@@ -39,12 +41,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-12">
                         <div class="service-item text-center">
                             <div class="service-icon">
                                 <img
                                     src="../../images/custom-software.png"
                                     alt="customer-application"
+                                    class="img-fluid"
                                 />
                             </div>
                             <h3>Custom Software<br />Development</h3>
@@ -55,12 +58,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-12">
                         <div class="service-item text-center">
                             <div class="service-icon">
                                 <img
                                     src="../../images/Mobile-Application.png"
                                     alt="mobile-application"
+                                    class="img-fluid"
                                 />
                             </div>
                             <h3>Mobile Application<br />Development</h3>

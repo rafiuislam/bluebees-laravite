@@ -1,11 +1,10 @@
 @use "../app/links" as *;
 
-.header-wrap {
-    padding-top: 35px;
+.navbar {
     position: relative;
     z-index: 1;
 }
-.main-menu {
+.collapse {
     ul {
         li {
             padding: 0 20px;
@@ -21,15 +20,15 @@
             a:after {
                 content: "";
                 position: absolute;
-                left: 0;
+                left: 8px;
                 width: 0;
-                height: 2px;
-                bottom: 0.1px;
+                height: 1px;
+                bottom: 10px;
                 background-color: map-get($colors, white);
                 transition: all 0.4s ease;
             }
             a:hover:after {
-                width: 100%;
+                width: 80%;
             }
         }
     }

@@ -1,11 +1,59 @@
 <template>
-    <header class="header-wrap">
+    <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
+            <router-link to="/" class="navbar-brand">
+                <img src="../../images/logo.png" alt="logo" class="img-fluid" />
+            </router-link>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                href="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <router-link to="/" class="nav-link">Home</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/about" class="nav-link"
+                            >About</router-link
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/services" class="nav-link"
+                            >Services</router-link
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/project" class="nav-link"
+                            >Project</router-link
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/team" class="nav-link"
+                            >Team</router-link
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/contact" class="nav-link"
+                            >Contact</router-link
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/career" class="nav-link"
+                            >Career</router-link
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="d-flex justify-content-between align-items-center">
                 <h1>
-                    <router-link to="/">
-                        <img src="../../images/logo.png" alt="logo" />
-                    </router-link>
+                 
                 </h1>
 
                 <nav class="main-menu">
@@ -25,7 +73,7 @@
                         <li><router-link to="/career">Career</router-link></li>
                     </ul>
                 </nav>
-            </div>
+            </div> -->
         </div>
-    </header>
+    </nav>
 </template>

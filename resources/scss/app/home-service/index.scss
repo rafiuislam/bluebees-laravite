@@ -1,6 +1,6 @@
 @use "../links.scss" as *;
 .service-section {
-    padding: 50px 0 92px;
+    padding: 50px 0 50px;
 
     .title {
         position: relative;
@@ -30,6 +30,10 @@
         .service-item {
             .service-icon {
                 padding-bottom: 48px;
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
             }
             h3 {
                 padding-bottom: 20px;
@@ -37,6 +41,7 @@
             }
             p {
                 @include font(primary, 16, 26, light);
+                padding-bottom: 42px;
             }
         }
     }
