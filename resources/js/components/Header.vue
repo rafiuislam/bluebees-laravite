@@ -16,10 +16,11 @@
 
             <!-- custom humbarger button -->
             <button
-                class="toggle navbar-toggler"
+                class="toggle navbar-toggler collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 href="#navmenu"
+                aria-expanded="true"
             >
                 <span></span>
                 <span></span>
