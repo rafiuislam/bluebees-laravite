@@ -79,7 +79,9 @@
         font-family: "Nunito Sans", sans-serif;
         p {
             padding-top: 75px;
-            width: 845px;
+            width: 60%;
+            position: relative;
+            left: 20%;
             @include font(primary, 16, 27, regular);
         }
         h5 {

@@ -25,7 +25,7 @@
         width: 10%;
     }
     .client-bg {
-        height: 558px;
+        height: 87.6%;
         position: absolute;
         left: 0;
         top: 10px;
@@ -51,17 +51,18 @@
         max-width: 1370px;
 
         * {
-            flex: 1 1 200px;
+            flex: 1 1 16.6%;
             justify-content: center;
             align-items: center;
             padding: 10px;
 
             img {
-                width: 150px;
-                height: auto;
-                padding: 30px;
+                width: 100px;
+                height: 75px;
+                padding: 10px;
                 display: flex;
                 justify-content: space-evenly;
+                object-fit: contain;
             }
         }
         div {

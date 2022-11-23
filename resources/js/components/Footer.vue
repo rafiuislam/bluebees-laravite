@@ -4,14 +4,18 @@
             <div class="wave" id="wave1"></div>
             <div class="wave" id="wave2"></div>
         </div>
-        <div class="container">
-            <div class="footer-col" style="width: 25%">
+        <div class="container d-md-flex">
+            <div
+                class="footer-col col-lg-3 col-md-6 col-sm-12 text-center text-md-start"
+            >
                 <span>
                     <router-link to="/">
                         <img src="../../images/logo.png" alt="logo" />
                     </router-link>
                 </span>
-                <div class="social-links">
+                <div
+                    class="social-links justify-content-center justify-content-md-start"
+                >
                     <a href="#" class="box">
                         <i
                             class="fa fa-facebook fa-2x"
@@ -26,7 +30,7 @@
                     </a>
                 </div>
             </div>
-            <div class="footer-col" style="width: 28%">
+            <div class="footer-col col-lg-3 col-md-6 col-sm-12">
                 <h4>Our Services</h4>
                 <ul>
                     <li>
@@ -87,7 +91,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-col" style="width: 22%">
+            <div class="footer-col col-lg-3 col-md-6 col-sm-12">
                 <h4>Important Link</h4>
                 <ul>
                     <li>
@@ -162,7 +166,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-col" style="width: 24%">
+            <div class="footer-col col-lg-3 col-md-6 col-sm-12">
                 <h4>Contact Info</h4>
                 <ul>
                     <li>

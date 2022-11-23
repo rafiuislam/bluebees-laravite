@@ -45,20 +45,6 @@
             @include sudo(100%, 100%, left, 0, top, -18px, bg);
         }
     }
-    .info {
-        padding: 110px 70px 0 210px;
-        h2 {
-            font-family: "Khand", sans-serif;
-            @include font(white, 40, 36, regular);
-            padding-bottom: 30px;
-        }
-        p {
-            font-family: "Nunito Sans", sans-serif;
-            @include font(white, 16, 26, regular);
-            text-align: start;
-            padding-bottom: 110px;
-        }
-    }
 
     button {
         border: 1.5px solid #00abe5;
@@ -67,6 +53,10 @@
         font-family: "Nunito Sans", sans-serif;
         @include font(btn, 17, 28, regular);
     }
+    .btn {
+        box-shadow: 2px 2px 6px rgba(255, 255, 255, 0),
+            2px 2px 6px rgba(0, 0, 0, 0.55);
+    }
     .container {
         position: relative;
         .team-img {
@@ -74,6 +64,15 @@
             padding-top: 30px;
             padding-left: 10%;
             z-index: -1;
+
+            @media (max-width: 1000px) {
+                padding-top: 140px;
+            }
+            @media (max-width: 768px) {
+                padding-top: 160px;
+            }
+            @media (max-width: 576px) {
+            }
         }
     }
 
@@ -90,9 +89,43 @@
         border-bottom-left-radius: 200px;
         background-color: #0d4e96;
 
-        .img-icon {
-            padding-top: 40px;
-            padding-left: 10%;
+        .info {
+            padding: 110px 70px 0 210px;
+            h2 {
+                font-family: "Khand", sans-serif;
+                @include font(white, 40, 36, regular);
+                padding-bottom: 30px;
+            }
+            p {
+                font-family: "Nunito Sans", sans-serif;
+                @include font(white, 16, 26, regular);
+                text-align: start;
+                padding-bottom: 110px;
+            }
+
+            @media (max-width: 1200px) {
+                padding: 110px 70px 0 120px;
+            }
+            @media (max-width: 1000px) {
+                padding: 110px 70px 0 120px;
+            }
+            @media (max-width: 768px) {
+                padding: 110px 70px 0 100px;
+            }
+            @media (max-width: 576px) {
+                padding: 110px 20px 0 50px;
+            }
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img-icon {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
         }
     }
 }

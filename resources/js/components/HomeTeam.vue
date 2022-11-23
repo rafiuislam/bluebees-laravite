@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 img-container">
                             <img
                                 class="img-fluid img-icon"
                                 src="../../images/info.png"

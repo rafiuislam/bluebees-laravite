@@ -3,7 +3,7 @@
         <div class="project-left-bg"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="project-item">
                         <div class="project-item-box first">
                             <h1>Our Project</h1>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-12">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img

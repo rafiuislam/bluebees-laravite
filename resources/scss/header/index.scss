@@ -3,11 +3,80 @@
 .navbar {
     position: relative;
     z-index: 1;
+    // custom hamburger button css
+    .toggle {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        box-shadow: 2px 2px 6px rgba(255, 255, 255, 0),
+            2px 2px 6px rgba(0, 0, 0, 0.55);
+
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 10;
+    }
+    .toggle span {
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        border-radius: 15px;
+        background: #0d4e96;
+        /* background: #00abe5; */
+        transition: 0.5s;
+    }
+    .toggle.collapsed span:nth-child(1) {
+        transform: translateY(-15px);
+        width: 25px;
+        left: 15px;
+        background: #0d4e96;
+    }
+    .toggle span:nth-child(1) {
+        transform: translateY(0px) rotate(45deg);
+        width: 40px;
+        background: #00abe5;
+    }
+    .toggle.collapsed span:nth-child(2) {
+        transform: translateY(15px);
+        width: 15px;
+        left: 15px;
+        background: #0d4e96;
+    }
+    .toggle span:nth-child(2) {
+        transform: translateY(0px) rotate(315deg);
+        width: 40px;
+        background: #00abe5;
+    }
+    .toggle span:nth-child(3) {
+        transform: translateX(60px);
+        background: #00abe5;
+    }
+    .toggle.collapsed span:nth-child(3) {
+        transform: translateX(0px);
+        background: #0d4e96;
+    }
+
+    @media (min-width: 768px) {
+        .toggle {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        .collapse {
+            background: #00abe5;
+            
+        }
+    }
 }
 .collapse {
     ul {
         li {
             padding: 0 20px;
+            font-family: "Nunito Sans", sans-serif;
             @include font(white, 17, 26, false);
             &:last-child {
                 padding-right: 0;

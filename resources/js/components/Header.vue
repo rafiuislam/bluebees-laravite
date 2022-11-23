@@ -4,7 +4,7 @@
             <router-link to="/" class="navbar-brand">
                 <img src="../../images/logo.png" alt="logo" class="img-fluid" />
             </router-link>
-
+            <!-- 
             <button
                 class="navbar-toggler"
                 type="button"
@@ -12,7 +12,20 @@
                 href="#navmenu"
             >
                 <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <!-- custom humbarger button -->
+            <button
+                class="toggle navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                href="#navmenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">

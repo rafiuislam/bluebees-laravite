@@ -37,7 +37,7 @@
                 <Slide v-for="slide in 10" :key="slide">
                     <div class="carousel__item">
                         <div class="caption">
-                            <p>
+                            <p class="text-center">
                                 {{ slide }} Sed tempor eget leo ut gravida.
                                 Quisque congue sagittis purus, sit amet
                                 frinfringilla sapien quis, tempor id,
