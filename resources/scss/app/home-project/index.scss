@@ -5,42 +5,52 @@
     h1 {
         font-family: "Khand", sans-serif;
         @include font(title, 40, 36, regular);
-        padding-top: 78px;
-        padding-bottom: 38px;
+        padding-top: 85px;
+        padding-bottom: 40px;
         cursor: pointer;
     }
     .project-left-bg {
-        height: 43%;
+        height: 42%;
         position: absolute;
         // width: 20%;
-        width: calc(50% - 20%);
+        width: calc(50% - 30%);
         background-color: #f8f8f8;
         z-index: -1;
 
         @media (max-width: 1200px) {
             // border: 3px solid red;
             height: 47%;
-            width: calc(50% - 30%);
+            width: calc(50% - 35%);
         }
         @media (max-width: 1000px) {
             // border: 3px solid red;
             height: 30%;
-            width: calc(50% - 30%);
+            width: calc(50% - 35%);
         }
         @media (max-width: 768px) {
-            // border: 3px solid red;
             height: 9.5%;
-            width: calc(50% - 30%);
+            width: calc(50% - 252px);
         }
         @media (max-width: 576px) {
             // border: 3px solid red;
-            height: 15%;
-            width: calc(50% - 30%);
+            height: 16%;
+            width: calc(80% - 252px);
         }
     }
     p {
         @include font(primary, 16, 26, light);
         padding-right: 22px;
+    }
+    @media (max-width: 576px) {
+        h1 {
+            padding-top: 45px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        p {
+            padding-bottom: 75px;
+            text-align: center;
+        }
     }
     .project-item {
         height: 100%;
@@ -71,8 +81,23 @@
                     @include font(white, 17, 29, semi-bold);
                 }
             }
+            @media (max-width: 768px) {
+                .project-work {
+                    position: relative;
+                    right: 0;
+                    top: 0.5%;
+
+                    button {
+                        background-color: #00abe5;
+                        border-radius: 0px 15px;
+                        padding: 10px 50px;
+                        font-family: "Nunito Sans", sans-serif;
+                        @include font(white, 17, 29, semi-bold);
+                    }
+                }
+            }
         }
     }
 
-    padding-bottom: 68px;
+    padding-bottom: 75px;
 }

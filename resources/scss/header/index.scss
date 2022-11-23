@@ -20,13 +20,13 @@
         overflow: hidden;
         z-index: 10;
     }
+
     .toggle span {
         position: absolute;
         width: 40px;
         height: 4px;
         border-radius: 15px;
         background: #0d4e96;
-        /* background: #00abe5; */
         transition: 0.5s;
     }
     .toggle.collapsed span:nth-child(1) {
@@ -65,9 +65,67 @@
             display: none;
         }
     }
+    @media (min-width: 768px) {
+    }
     @media (max-width: 768px) {
         .collapse {
             background: #00abe5;
+            padding: 10px 0 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 6px rgba(255, 255, 255, 0),
+                2px 2px 6px rgba(0, 0, 0, 0.55);
+
+            ul li {
+                list-style: none;
+                transition: 0.4s;
+                visibility: hidden;
+                opacity: 0;
+                // transform: translateX(-200px);
+                transition-delay: calc(0.1s * var(--i));
+            }
+            &.show ul li {
+                visibility: visible;
+                opacity: 1;
+                transform: translateX(-140px);
+            }
+            ul li a {
+                position: relative;
+                right: 46%;
+                width: 260%;
+                text-decoration: none;
+                color: rgb(255, 248, 248);
+                transition: 0s;
+                text-align: center;
+            }
+            ul li a:hover {
+                color: #0d4e96;
+                background-color: #badbff87;
+                left: 142px;
+                width: 100%;
+                border-radius: 8px;
+                transition: 0s;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            a:after {
+                content: "";
+                position: absolute;
+                left: 0%;
+                width: 0;
+                height: 1px;
+                bottom: 10px;
+                transition: all 0.4s ease;
+            }
+            a:hover:after {
+                width: 0%;
+            }
+        }
+    }
+    @media (max-width: 375px) {
+        .collapse {
+            ul li a {
+                right: 33%;
+            }
         }
     }
 }

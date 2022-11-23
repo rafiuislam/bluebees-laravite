@@ -28,40 +28,41 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                <ul class="navbar-nav ms-auto list-group">
+                    <li style="--i: 0" class="nav-item">
                         <router-link to="/" class="nav-link">Home</router-link>
                     </li>
-                    <li class="nav-item">
+                    <li style="--i: 1" class="nav-item">
                         <router-link to="/about" class="nav-link"
                             >About</router-link
                         >
                     </li>
-                    <li class="nav-item">
+                    <li style="--i: 2" class="nav-item">
                         <router-link to="/services" class="nav-link"
                             >Services</router-link
                         >
                     </li>
-                    <li class="nav-item">
+                    <li style="--i: 3" class="nav-item">
                         <router-link to="/project" class="nav-link"
                             >Project</router-link
                         >
                     </li>
-                    <li class="nav-item">
+                    <li style="--i: 4" class="nav-item">
                         <router-link to="/team" class="nav-link"
                             >Team</router-link
                         >
                     </li>
-                    <li class="nav-item">
+                    <li style="--i: 5" class="nav-item">
                         <router-link to="/contact" class="nav-link"
                             >Contact</router-link
                         >
                     </li>
-                    <li class="nav-item">
+                    <li style="--i: 6" class="nav-item">
                         <router-link to="/career" class="nav-link"
                             >Career</router-link
                         >
                     </li>
+                    <li style="--i: 7" class="nav-item"></li>
                 </ul>
             </div>
 
