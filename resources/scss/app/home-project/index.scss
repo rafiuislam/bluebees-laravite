@@ -1,39 +1,57 @@
 @use "../links.scss" as *;
 .project-section {
     position: relative;
-
+    padding-bottom: 50px;
+    .container {
+        padding: 50px 0px 0px 0px;
+    }
     h1 {
         font-family: "Khand", sans-serif;
         @include font(title, 40, 36, regular);
-        padding-top: 85px;
+        padding-top: 75px;
         padding-bottom: 40px;
         cursor: pointer;
     }
     .project-left-bg {
-        height: 42%;
+        height: 318px;
+        overflow: hidden;
+        width: calc(70% - 685px);
+        padding-bottom: 18px;
         position: absolute;
-        // width: 20%;
-        width: calc(50% - 30%);
+        left: 0;
+        top: 50px;
         background-color: #f8f8f8;
         z-index: -1;
 
+        @media (max-width: 2652px) {
+            // border: 3px solid red;
+            height: 41.7%;
+            width: 25%;
+        }
+
+        @media (max-width: 1400px) {
+            // border: 3px solid red;
+            height: 39.7%;
+            width: calc(50% - 35%);
+        }
+
         @media (max-width: 1200px) {
             // border: 3px solid red;
-            height: 47%;
+            height: 44.5%;
             width: calc(50% - 35%);
         }
         @media (max-width: 1000px) {
             // border: 3px solid red;
-            height: 30%;
+            height: 28.3%;
             width: calc(50% - 35%);
         }
         @media (max-width: 768px) {
-            height: 9.5%;
+            height: 8.8%;
             width: calc(50% - 252px);
         }
         @media (max-width: 576px) {
             // border: 3px solid red;
-            height: 16%;
+            height: 14%;
             width: calc(80% - 252px);
         }
     }
@@ -49,6 +67,7 @@
         }
         p {
             padding-bottom: 75px;
+            padding-left: 25px;
             text-align: center;
         }
     }
@@ -98,6 +117,4 @@
             }
         }
     }
-
-    padding-bottom: 75px;
 }

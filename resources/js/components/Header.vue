@@ -34,7 +34,7 @@
                     </li>
                     <li style="--i: 1" class="nav-item">
                         <router-link to="/about" class="nav-link"
-                            >About</router-link
+                            >About Us</router-link
                         >
                     </li>
                     <li style="--i: 2" class="nav-item">

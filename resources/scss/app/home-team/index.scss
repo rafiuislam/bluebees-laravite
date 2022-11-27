@@ -29,7 +29,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        padding-bottom: 30px;
+        padding: 0 20px 30px 20px;
     }
     .team-right-bg {
         height: 486px;
@@ -39,27 +39,29 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        top: 526px;
+        top: 606px;
         background-color: #cad8e8;
         &::after {
             @include sudo(100%, 100%, left, 0, top, -18px, bg);
         }
 
         @media (max-width: 1400px) {
-            height: 538px;
+            top: 606px;
+            height: 564px;
         }
         @media (max-width: 1200px) {
+            top: 606px;
             height: 564px;
             width: calc(80% - 685px);
         }
         @media (max-width: 1000px) {
-            top: 578px;
-            height: 746px;
+            top: 658px;
+            height: 798px;
             width: calc(100% - 685px);
         }
         @media (max-width: 768px) {
-            top: 578px;
-            height: 882px;
+            top: 658px;
+            height: 895px;
             width: 50%;
         }
         @media (max-width: 576px) {
@@ -80,6 +82,8 @@
     }
     .container {
         position: relative;
+        padding: 50px 0px 10px 0px;
+
         .team-img {
             position: absolute;
             padding-top: 30px;
@@ -150,6 +154,9 @@
                 font-family: "Khand", sans-serif;
                 @include font(white, 40, 36, regular);
                 padding-bottom: 30px;
+                @media (max-width: 576px) {
+                    text-align: center;
+                }
             }
             p {
                 font-family: "Nunito Sans", sans-serif;
@@ -158,6 +165,7 @@
                 padding-bottom: 110px;
                 @media (max-width: 576px) {
                     padding-bottom: 80px;
+                    text-align: center;
                 }
             }
 
@@ -171,7 +179,7 @@
                 padding: 110px 70px 0 100px;
             }
             @media (max-width: 576px) {
-                padding: 110px 20px 0 50px;
+                padding: 111px 40px 0 40px;
             }
         }
 

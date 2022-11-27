@@ -1,7 +1,7 @@
 @use "../links.scss" as *;
 .client {
     position: relative;
-    padding-bottom: 230px;
+    padding-bottom: 150px;
 
     .title {
         position: relative;
@@ -25,7 +25,7 @@
         width: 10%;
     }
     .client-bg {
-        height: 87.6%;
+        height: 78.6%;
         position: absolute;
         left: 0;
         top: 10px;
@@ -37,7 +37,7 @@
     h1 {
         font-family: "Khand", sans-serif;
         @include font(title, 40, 36, regular);
-        padding-top: 105px;
+        padding-top: 30px;
         padding-bottom: 70px;
         display: flex;
         justify-content: center;

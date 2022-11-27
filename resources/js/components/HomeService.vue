@@ -1,82 +1,69 @@
 <template>
-    <section class="service-section">
-        <div class="container">
-            <h1 class="title">Our Services</h1>
-            <div class="service-container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-12">
-                        <div class="service-item text-center">
-                            <div class="service-icon">
-                                <img
-                                    src="../../images/ui-ux-design-icon.png"
-                                    alt="ui-ux"
-                                    class="img-fluid"
-                                />
+    <div class="container">
+        <h1 class="title">Our Services</h1>
+        <Carousel :settings="settings" :breakpoints="breakpoints">
+            <Slide v-for="slide in 10" :key="slide">
+                <div class="carousel__item">
+                    <div class="service-container">
+                        <div class="">
+                            <div class="">
+                                <div class="service-item text-center">
+                                    <div class="service-icon">
+                                        <img
+                                            src="../../images/ui-ux-design-icon.png"
+                                            alt="ui-ux"
+                                            class="img-fluid"
+                                        />
+                                    </div>
+                                    <h3>UI UX <br />Design</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore
+                                    </p>
+                                </div>
                             </div>
-                            <h3>UI UX <br />Design</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="service-item text-center">
-                            <div class="service-icon">
-                                <img
-                                    src="../../images/web-application-icon.png"
-                                    alt="web-application"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <h3>
-                                Web Application <br />
-                                Development
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="service-item text-center">
-                            <div class="service-icon">
-                                <img
-                                    src="../../images/custom-software.png"
-                                    alt="customer-application"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <h3>Custom Software<br />Development</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="service-item text-center">
-                            <div class="service-icon">
-                                <img
-                                    src="../../images/Mobile-Application.png"
-                                    alt="mobile-application"
-                                    class="img-fluid"
-                                />
-                            </div>
-                            <h3>Mobile Application<br />Development</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </Slide>
+        </Carousel>
+    </div>
 </template>
+
+<script>
+import { defineComponent } from "vue";
+import { Carousel, Navigation, Slide } from "vue3-carousel";
+
+import "vue3-carousel/dist/carousel.css";
+
+export default defineComponent({
+    name: "Breakpoints",
+    components: {
+        Carousel,
+        Slide,
+        Navigation,
+    },
+    data: () => ({
+        // carousel settings
+        settings: {
+            itemsToShow: 1,
+            snapAlign: "center",
+        },
+        // breakpoints are mobile first
+        // any settings not specified will fallback to the carousel settings
+        breakpoints: {
+            // 700px and up
+            700: {
+                itemsToShow: 2,
+                snapAlign: "start",
+            },
+            // 1024 and up
+            1024: {
+                itemsToShow: 4,
+                snapAlign: "start",
+            },
+        },
+    }),
+});
+</script>

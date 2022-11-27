@@ -3,6 +3,9 @@
 .navbar {
     position: relative;
     z-index: 1;
+    .container {
+        padding: 0px 0px 100px 0px;
+    }
     // custom hamburger button css
     .toggle {
         position: relative;
@@ -132,7 +135,7 @@
 .collapse {
     ul {
         li {
-            padding: 0 20px;
+            padding: 0 6px;
             font-family: "Nunito Sans", sans-serif;
             @include font(white, 17, 26, false);
             &:last-child {
