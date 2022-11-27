@@ -39,7 +39,7 @@
                     <img
                         src="../../images/11.png"
                         alt="client"
-                        style="width: 150px; height: 100px"
+                        style="width: 100%; height: 100%"
                     />
                 </div>
                 <div class="border col-md-2 col-sm-6 col-6">

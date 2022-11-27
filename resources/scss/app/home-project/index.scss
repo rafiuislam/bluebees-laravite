@@ -40,7 +40,7 @@
             height: 44.5%;
             width: calc(50% - 35%);
         }
-        @media (max-width: 1000px) {
+        @media (max-width: 992px) {
             // border: 3px solid red;
             height: 28.3%;
             width: calc(50% - 35%);
@@ -51,7 +51,7 @@
         }
         @media (max-width: 576px) {
             // border: 3px solid red;
-            height: 14%;
+            height: 13%;
             width: calc(80% - 252px);
         }
     }
