@@ -91,7 +91,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-col col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-col col-lg-2 col-md-6 col-sm-12">
                 <h4>Important Link</h4>
                 <ul>
                     <li>

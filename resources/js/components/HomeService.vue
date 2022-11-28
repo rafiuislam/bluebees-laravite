@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="title">Our Services</h1>
+        <h1 class="title">{{ props.header }}</h1>
         <Carousel :settings="settings" :breakpoints="breakpoints">
             <Slide v-for="slide in 10" :key="slide">
                 <div class="carousel__item">
@@ -15,11 +15,9 @@
                                             class="img-fluid"
                                         />
                                     </div>
-                                    <h3>UI UX <br />Design</h3>
+                                    <h3>{{ props.title }}</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore
+                                        {{ props.subHeader }}
                                     </p>
                                 </div>
                             </div>
@@ -45,6 +43,13 @@ export default defineComponent({
         Navigation,
     },
     data: () => ({
+        props: {
+            header: "Our Services",
+            subHeader:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+            image: "../../images/ui-ux-design-icon.png",
+            title: "UI UX Design",
+        },
         // carousel settings
         settings: {
             itemsToShow: 1,
