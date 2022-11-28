@@ -8,6 +8,7 @@
         color: map-get($colors, title);
         text-decoration: none;
         cursor: pointer;
+        padding-bottom: 45px;
     }
     .title:after {
         content: "";
@@ -42,29 +43,29 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        top: 606px;
+        top: 591px;
         background-color: #cad8e8;
         &::after {
             @include sudo(100%, 100%, left, 0, top, -18px, bg);
         }
 
         @media (max-width: 1400px) {
-            top: 606px;
+            top: 591px;
             height: 538px;
         }
         @media (max-width: 1200px) {
-            top: 606px;
+            top: 591px;
             height: 564px;
             width: calc(80% - 685px);
         }
         @media (max-width: 992px) {
-            top: 658px;
+            top: 643px;
             height: 746px;
             width: calc(100% - 685px);
         }
         @media (max-width: 768px) {
-            top: 658px;
-            height: 868px;
+            top: 642px;
+            height: 870px;
             width: 50%;
         }
         @media (max-width: 576px) {

@@ -1,6 +1,6 @@
 <template>
     <section class="slider">
-        <h1 class="title">Our Happy Customers</h1>
+        <h1 class="title">{{ props.title }}</h1>
         <div class="container">
             <!-- Demo -->
             <Carousel
@@ -38,14 +38,7 @@
                     <div class="carousel__item">
                         <div class="caption">
                             <p class="text-center">
-                                {{ slide }} Sed tempor eget leo ut gravida.
-                                Quisque congue sagittis purus, sit amet
-                                frinfringilla sapien quis, tempor id,
-                                scelerisque Sed tempor eget leo ut gravida.
-                                Quisque congue sagittis purus, sit amet
-                                frinfringilla sapien quis, tempor id,
-                                scelerisque Sed tempor eget leo ut gravida.
-                                Quisque congue sagittis purus,
+                                {{ slide }}{{ props.subHeader }}
                             </p>
                             <h5><span>Abdulla,</span> Client</h5>
                         </div>
@@ -69,6 +62,12 @@ export default defineComponent({
         Navigation,
     },
     data: () => ({
+        props: {
+            title: "Our Happy Customers",
+            subHeader:
+                " Quisque congue sagittis purus, sit amet frinfringilla sapien quis, tempor id,scelerisque Sed tempor eget leo ut gravida.Quisque congue sagittis purus, sit amet, frinfringilla sapien quis, tempor id, scelerisque Sed tempor eget leo ut gravida.Quisque congue sagittis purus",
+            image: "../../images/ui-ux-design-icon.png",
+        },
         // carousel settings
         currentSlide: 0,
         settings: {
