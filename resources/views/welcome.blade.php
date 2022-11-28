@@ -22,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
-                @vite(["resources/js/bootstrap.min.js","resources/js/app.js","resources/css/bootstrap.min.css","resources/scss/style.scss"])
+                @vite(["resources/js/app.js","resources/scss/style.scss"])
 
        
         <div id="app"></div>
