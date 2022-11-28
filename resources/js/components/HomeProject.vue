@@ -6,14 +6,9 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="project-item">
                         <div class="project-item-box first">
-                            <h1>Our Project</h1>
+                            <h1>{{ props.title }}</h1>
                             <p>
-                                Sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Quis ipsum suspendisse amet,
-                                consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna
-                                aliqua.
+                                {{ props.subHeader }}
                             </p>
                         </div>
                     </div>
@@ -80,3 +75,14 @@
         </div>
     </section>
 </template>
+
+<script setup>
+import { reactive } from "vue";
+
+const props = reactive({
+    title: "Our Project",
+    subHeader:
+        "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "../../images/project-pic-1.jpg",
+});
+</script>

@@ -29,8 +29,10 @@
         @include font(primary, 16, 26, light);
         display: flex;
         justify-content: center;
+        align-items: center;
         text-align: center;
-        padding: 0 20px 30px 0px;
+        padding: 0 0px 30px 0px;
+
         @media (max-width: 576px) {
             padding: 0 20px 30px 20px;
         }
@@ -98,10 +100,10 @@
                 padding-top: 50px;
             }
             @media (max-width: 992px) {
-                padding-top: 140px;
+                padding-top: 170px;
             }
             @media (max-width: 768px) {
-                padding-top: 160px;
+                padding-top: 180px;
                 padding-left: 5%;
             }
             @media (max-width: 576px) {
@@ -125,12 +127,12 @@
         padding: 0 0 18px;
         margin: 0;
         background-color: #cad8e8;
-        border-top-left-radius: 230px;
-        border-bottom-left-radius: 230px;
+        border-top-left-radius: 300px;
+        border-bottom-left-radius: 300px;
 
         @media (max-width: 768px) {
-            border-top-left-radius: 130px;
-            border-bottom-left-radius: 130px;
+            border-top-left-radius: 200px;
+            border-bottom-left-radius: 200px;
         }
         @media (max-width: 576px) {
             border-top-left-radius: 0px;
@@ -139,13 +141,13 @@
     }
     .info-box {
         margin-top: 275px;
-        border-top-left-radius: 200px;
-        border-bottom-left-radius: 200px;
+        border-top-left-radius: 300px;
+        border-bottom-left-radius: 300px;
         background-color: #0d4e96;
 
         @media (max-width: 768px) {
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
+            border-top-left-radius: 200px;
+            border-bottom-left-radius: 200px;
         }
         @media (max-width: 576px) {
             border-top-left-radius: 0px;
