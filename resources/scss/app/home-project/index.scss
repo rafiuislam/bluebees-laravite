@@ -25,6 +25,7 @@
             // border: 3px solid red;
             height: 41.7%;
             width: 25%;
+            top: 0;
         }
 
         @media (max-width: 1400px) {
@@ -53,8 +54,9 @@
         }
         @media (max-width: 576px) {
             // border: 3px solid red;
-            height: 11.8%;
+            height: 15.8%;
             width: calc(80% - 252px);
+            top: 0%;
         }
     }
     p {
