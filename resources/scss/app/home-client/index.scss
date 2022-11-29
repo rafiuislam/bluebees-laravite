@@ -13,20 +13,21 @@
         text-decoration: none;
         cursor: pointer;
     }
+
     .title:after {
         content: "";
         position: absolute;
-        left: 44.2%;
-        width: 0%;
+        left: 4.5%;
+        width: 0;
         height: 6px;
         top: 10px;
         border-radius: 10px;
         background: #00abe5;
         transition: all 0.4s ease;
-        z-index: 10;
+        z-index: -1;
     }
     .title:hover:after {
-        width: 11%;
+        width: 90%;
     }
     .client-bg {
         height: 85.6%;

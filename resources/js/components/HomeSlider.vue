@@ -1,6 +1,8 @@
 <template>
     <section class="slider">
-        <h1 class="title">{{ props.title }}</h1>
+        <div class="d-flex justify-content-center">
+            <h1 class="title">{{ props.title }}</h1>
+        </div>
         <div class="container">
             <!-- Demo -->
             <Carousel

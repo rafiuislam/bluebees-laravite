@@ -1,7 +1,9 @@
 <template>
     <div class="container">
         <div class="box-container">
-            <h1 class="title">{{ props.title }}</h1>
+            <div class="d-flex justify-content-center">
+                <h1 class="title">{{ props.title }}</h1>
+            </div>
             <Carousel :settings="settings" :breakpoints="breakpoints">
                 <Slide v-for="slide in 10" :key="slide">
                     <div class="carousel__item">

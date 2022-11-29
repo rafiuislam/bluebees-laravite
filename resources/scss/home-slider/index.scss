@@ -8,22 +8,21 @@
         color: map-get($colors, title);
         @include font(title, 40, 36, regular);
         cursor: pointer;
-
-        &:after {
-            content: "";
-            position: absolute;
-            left: 45%;
-            width: 0;
-            height: 6px;
-            top: -20px;
-            border-radius: 10px;
-            background: #f1f7ff;
-            transition: all 0.4s ease;
-            z-index: -1;
-        }
-        &:hover:after {
-            width: 10%;
-        }
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 20%;
+        width: 0;
+        height: 6px;
+        top: -20px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 65%;
     }
 
     .carousel__prev,

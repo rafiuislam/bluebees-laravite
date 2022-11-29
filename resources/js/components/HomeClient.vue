@@ -2,7 +2,9 @@
     <section class="client">
         <div class="client-bg"></div>
         <div class="container">
-            <h1 class="title">Our Clients</h1>
+            <div class="d-flex justify-content-center">
+                <h1 class="title">{{ props.title }}</h1>
+            </div>
 
             <div class="client_container">
                 <div class="col-md-2 col-sm-6 col-6">
@@ -49,3 +51,10 @@
         </div>
     </section>
 </template>
+<script setup>
+import { reactive } from "vue";
+
+const props = reactive({
+    title: "Our Clients",
+});
+</script>

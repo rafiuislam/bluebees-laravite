@@ -2,7 +2,9 @@
     <section class="team">
         <div class="team-right-bg"></div>
         <div class="container">
-            <h1 class="title">{{ props.title }}</h1>
+            <div class="d-flex justify-content-center">
+                <h1 class="title">{{ props.title }}</h1>
+            </div>
 
             <p>
                 {{ props.subHeader }}
