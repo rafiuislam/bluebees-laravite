@@ -1,7 +1,7 @@
 @use "../links.scss" as *;
 .project-section {
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
     h1 {
         font-family: "Khand", sans-serif;
@@ -31,25 +31,29 @@
             // border: 3px solid red;
             height: 39.7%;
             width: calc(50% - 35%);
+            top: 0%;
         }
 
         @media (max-width: 1200px) {
             // border: 3px solid red;
             height: 44.5%;
             width: calc(50% - 35%);
+            top: 0%;
         }
         @media (max-width: 992px) {
             // border: 3px solid red;
-            height: 28.3%;
+            height: 28.8%;
             width: calc(50% - 35%);
+            top: 0%;
         }
-        @media (max-width: 768px) {
-            height: 8.8%;
+        @media (max-width: 767px) {
+            height: 9.2%;
             width: calc(50% - 252px);
+            top: 0%;
         }
         @media (max-width: 576px) {
             // border: 3px solid red;
-            height: 13%;
+            height: 11.8%;
             width: calc(80% - 252px);
         }
     }
@@ -88,7 +92,7 @@
             .project-work {
                 position: absolute;
                 right: 0;
-                bottom: 8%;
+                bottom: 10%;
 
                 button {
                     background-color: #00abe5;

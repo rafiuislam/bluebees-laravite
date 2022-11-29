@@ -1,31 +1,33 @@
 <template>
     <div class="container">
-        <h1 class="title">{{ props.title }}</h1>
-        <Carousel :settings="settings" :breakpoints="breakpoints">
-            <Slide v-for="slide in 10" :key="slide">
-                <div class="carousel__item">
-                    <div class="service-container">
-                        <div class="">
+        <div class="box-container">
+            <h1 class="title">{{ props.title }}</h1>
+            <Carousel :settings="settings" :breakpoints="breakpoints">
+                <Slide v-for="slide in 10" :key="slide">
+                    <div class="carousel__item">
+                        <div class="service-container">
                             <div class="">
-                                <div class="service-item text-center">
-                                    <div class="service-icon">
-                                        <img
-                                            src="../../images/ui-ux-design-icon.png"
-                                            alt="ui-ux"
-                                            class="img-fluid"
-                                        />
+                                <div class="">
+                                    <div class="service-item text-center">
+                                        <div class="service-icon">
+                                            <img
+                                                src="../../images/ui-ux-design-icon.png"
+                                                alt="ui-ux"
+                                                class="img-fluid"
+                                            />
+                                        </div>
+                                        <h3>{{ props.header }}</h3>
+                                        <p>
+                                            {{ props.subHeader }}
+                                        </p>
                                     </div>
-                                    <h3>{{ props.header }}</h3>
-                                    <p>
-                                        {{ props.subHeader }}
-                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </Slide>
-        </Carousel>
+                </Slide>
+            </Carousel>
+        </div>
     </div>
 </template>
 

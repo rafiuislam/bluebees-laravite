@@ -1,6 +1,9 @@
 @use "../links.scss" as *;
 
 .container {
+    .box-container {
+        padding-bottom: 100px;
+    }
     .title {
         position: relative;
         color: map-get($colors, title);
@@ -42,14 +45,6 @@
         }
         p {
             @include font(primary, 16, 26, light);
-            // padding-bottom: 42px;
         }
     }
 }
-
-// .carousel {
-//     ol {
-//         li {
-//         }
-//     }
-// }
