@@ -31,16 +31,26 @@
                         <li><router-link to="/career">Career</router-link></li>
                     </ul>
                 </nav>
-                <div class="openClose">Menu</div>
+                <!-- custom humbarger button -->
+                <button class="toggle navbar-toggler openClose">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </div>
 </template>
 
-<script>
+<script setup>
 $(document).ready(function () {
     $(".openClose").click(function () {
         $(".main-menu").slideToggle();
+    });
+});
+$(document).ready(function () {
+    $("button").click(function () {
+        $("button").toggleClass("collapsed");
     });
 });
 </script>

@@ -103,13 +103,13 @@ footer {
         &#wave1 {
             opacity: 1;
             bottom: 0;
-            z-index: 1000;
+            z-index: 0;
             animation: animateWave 20s linear infinite;
         }
         &#wave2 {
             opacity: 0.5;
             bottom: 100px;
-            z-index: 999;
+            z-index: -1;
             animation: animateWave_2 20s linear infinite;
         }
     }
