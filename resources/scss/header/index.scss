@@ -97,6 +97,12 @@
     }
 }
 
+@include media(md) {
+    .main-wrap {
+        padding: 12px 0;
+    }
+}
+
 // custom hamburger button css
 .toggle {
     position: relative;
@@ -152,9 +158,4 @@
 .toggle span:nth-child(3) {
     transform: translateX(0px);
     background: #0d4e96;
-}
-@media (min-width: 768px) {
-    .toggle {
-        display: none;
-    }
 }

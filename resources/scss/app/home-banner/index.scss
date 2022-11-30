@@ -65,35 +65,10 @@
         }
     }
 }
-@media (max-width: 768px) {
+@include media(md) {
     .home-banner {
+        margin-top: 0;
         .banner-caption {
-            h2 {
-                @include font(false, 20, 30, false);
-
-                align-self: center;
-                padding-top: 10%;
-            }
-            a:after {
-                display: none;
-            }
-            a:hover:after {
-                display: none;
-            }
-        }
-    }
-}
-@media (max-width: 576px) {
-    .home-banner {
-        .banner-caption {
-            h2 {
-                @include font(false, 20, 30, false);
-
-                align-self: center;
-                padding-top: 10%;
-                text-align: center;
-                width: 100%;
-            }
         }
     }
 }
