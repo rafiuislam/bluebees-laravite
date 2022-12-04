@@ -1,0 +1,24 @@
+@use "../app/links.scss" as *;
+.about {
+    padding: 75px 0px 130px 0px;
+    .title {
+        padding-bottom: 45px;
+    }
+    p {
+        @include font(primary, 16, 26, light);
+        display: flex;
+        text-align: center;
+        padding: 0 0px 0px 0px;
+        width: 80%;
+
+        @media (max-width: 576px) {
+            padding: 0 0px 0px 0px;
+        }
+    }
+    img {
+        padding: 75px 0px 75px 0px;
+        @media (max-width: 576px) {
+            padding: 10px 0px 10px 0px;
+        }
+    }
+}

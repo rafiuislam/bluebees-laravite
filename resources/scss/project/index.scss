@@ -1,0 +1,18 @@
+@use "../app/links.scss" as *;
+.project {
+    padding: 75px 0px 130px 0px;
+    .title {
+        padding: 0px 0px 45px 0px;
+    }
+    p {
+        @include font(primary, 16, 26, light);
+        display: flex;
+        text-align: center;
+        padding: 0 0px 50px 0px;
+        width: 80%;
+
+        @media (max-width: 576px) {
+            padding: 10px 0px 10px 0px;
+        }
+    }
+}

@@ -29,8 +29,6 @@
     p {
         @include font(primary, 16, 26, light);
         display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
         padding: 0 0px 30px 0px;
         width: 80%;

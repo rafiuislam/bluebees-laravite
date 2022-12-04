@@ -5,7 +5,7 @@ import services from "./pages/services.vue";
 import project from "./pages/project.vue";
 import team from "./pages/team.vue";
 import contact from "./pages/contact.vue";
-import career from "./pages/career.vue";
+import products from "./pages/products.vue";
 
 const routes = [
     {
@@ -15,7 +15,7 @@ const routes = [
     },
     {
         path: "/about",
-        name: "About",
+        name: "About Us",
         component: about,
     },
     {
@@ -39,9 +39,9 @@ const routes = [
         component: contact,
     },
     {
-        path: "/career",
-        name: "Career",
-        component: career,
+        path: "/products",
+        name: "products",
+        component: products,
     },
 ];
 
