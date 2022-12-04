@@ -7,11 +7,18 @@
         width: 100%;
     }
     .banner-caption {
+        .container {
+        }
         @include absolute(100%, false, left, 0, top, 50%);
         transform: translateY(-50%);
         h2 {
             font-family: "Khand", sans-serif;
             @include font(title, 55, 66, regular);
+
+            width: 48%;
+            height: 5%;
+            top: -90px;
+            right: 45%;
         }
         a {
             position: relative;
@@ -49,7 +56,17 @@
     .home-banner {
         .banner-caption {
             h2 {
-                @include font(false, 30, 40, false);
+                font-family: "Khand", sans-serif;
+                @include font(title, 40, 50, regular);
+                width: 50%;
+                height: 5%;
+                top: -90px;
+            }
+            a:after {
+                bottom: 8px;
+            }
+            a:hover:after {
+                bottom: 0px;
             }
         }
     }
@@ -58,9 +75,17 @@
     .home-banner {
         .banner-caption {
             h2 {
-                @include font(false, 20, 30, false);
-                width: 50%;
+                font-family: "Khand", sans-serif;
+                @include font(title, 20, 34, medium);
+                width: 45%;
                 padding-top: 5%;
+            }
+            a:after {
+                bottom: 8px;
+                height: 5px;
+            }
+            a:hover:after {
+                bottom: 4px;
             }
         }
     }
@@ -69,6 +94,28 @@
     .home-banner {
         margin-top: 0;
         .banner-caption {
+            .container {
+                align-items: center;
+            }
+
+            h2 {
+                font-family: "Khand", sans-serif;
+                @include font(title, 34, 48, medium);
+                text-align: center;
+                position: relative;
+                width: 80%;
+                top: 35px;
+                left: 10%;
+            }
+            a {
+                position: relative;
+                color: map-get($colors, title);
+                text-decoration: none;
+                cursor: pointer;
+            }
+            a:after {
+                width: 0%;
+            }
         }
     }
 }
