@@ -18,7 +18,7 @@ const props = reactive({
     <HomeBanner />
 
     <!-- project section -->
-    <section class="project-section team">
+    <section class="project-section team-page">
         <div class="container">
             <div class="d-flex justify-content-center">
                 <h1 class="title">{{ props.title }}</h1>
@@ -28,6 +28,114 @@ const props = reactive({
                     {{ props.header }}
                 </p>
             </div>
+            <!-- employer card -->
+            <div class="row sec">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="project-item-box">
+                        <img
+                            src="../../images/project-pic-3.jpg"
+                            class="img-fluid"
+                            alt="project"
+                        />
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-6 col-12">
+                    <div class="d-flex justify-content-start">
+                        <span class="name left">Mahin Mazher</span>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <span class="subTitle left">
+                            Founder & Managing Director
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <span class="subTitle left desc">
+                            In dapibus blandit turpis porttitor ultrices. Fusce
+                            tempor turpis eu magna placerat, sed porttitor arcu
+                            suscipit. Quisque rhoncus, lacus tincidunt vehicula
+                            varius, tellus neque ullamcorper nibh, eget feugiat
+                            augue felis ut metus. Praesent interdum molestie
+                            eros id ullamcorper. Nullam venenatis, felis eu
+                            sodales maximus, nulla turpis vehicula orci, nec
+                            laoreet nulla velit sit amet sapien. Duis auctor
+                            metus ac sapien volutpat, non rutrum lectus aliquam.
+                            Cras urna nulla, volutpat at suscipit id, dignissim
+                            id nunc. Integer a rutrum turpis, nec molestie nibh.
+                            Ut euismod felis sit amet leo dictum pretium. Nam
+                            fringilla vitae leo nec rhoncus. Donec dui lorem,
+                            lobortis non consequat vel, venenatis eget turpis.
+                            Duis et diam massa. Etiam tincidunt, ligula vel
+                            semper blandit, arcu diam rutrum nisl, eu porttitor
+                            sem nisl ac ex.
+                        </span>
+                    </div>
+                    <!-- social icons -->
+                    <div
+                        class="social-links justify-content-center justify-content-md-start"
+                    >
+                        <a href="#" class="box">
+                            <i class="fa fa-linkedin fa-x"></i>
+                        </a>
+                        <a href="#" id="twit" class="box">
+                            <i class="fa fa-twitter fa-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row sec">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="project-item-box">
+                        <img
+                            src="../../images/project-pic-3.jpg"
+                            class="img-fluid"
+                            alt="project"
+                        />
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-6 col-12">
+                    <div class="d-flex justify-content-start">
+                        <span class="name left">A S M Rezaul Karim</span>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <span class="subTitle left">
+                            Director, BlueBees Limited
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <span class="subTitle left desc">
+                            In dapibus blandit turpis porttitor ultrices. Fusce
+                            tempor turpis eu magna placerat, sed porttitor arcu
+                            suscipit. Quisque rhoncus, lacus tincidunt vehicula
+                            varius, tellus neque ullamcorper nibh, eget feugiat
+                            augue felis ut metus. Praesent interdum molestie
+                            eros id ullamcorper. Nullam venenatis, felis eu
+                            sodales maximus, nulla turpis vehicula orci, nec
+                            laoreet nulla velit sit amet sapien. Duis auctor
+                            metus ac sapien volutpat, non rutrum lectus aliquam.
+                            Cras urna nulla, volutpat at suscipit id, dignissim
+                            id nunc. Integer a rutrum turpis, nec molestie nibh.
+                            Ut euismod felis sit amet leo dictum pretium. Nam
+                            fringilla vitae leo nec rhoncus. Donec dui lorem,
+                            lobortis non consequat vel, venenatis eget turpis.
+                            Duis et diam massa. Etiam tincidunt, ligula vel
+                            semper blandit, arcu diam rutrum nisl, eu porttitor
+                            sem nisl ac ex.
+                        </span>
+                    </div>
+                    <!-- social icons -->
+                    <div
+                        class="social-links justify-content-center justify-content-md-start"
+                    >
+                        <a href="#" class="box">
+                            <i class="fa fa-linkedin fa-x"></i>
+                        </a>
+                        <a href="#" id="twit" class="box">
+                            <i class="fa fa-twitter fa-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- employee card -->
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-12 pb-4">
                     <div class="project-item">
@@ -42,35 +150,13 @@ const props = reactive({
                             <span class="name">{{ props.name }}</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <p class="">
+                            <span class="subTitle">
                                 {{ props.subTitle }}
-                            </p>
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-1.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-2.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
@@ -79,31 +165,17 @@ const props = reactive({
                                 alt="project"
                             />
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-4.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-5.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
@@ -112,27 +184,184 @@ const props = reactive({
                                 alt="project"
                             />
                         </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-1.jpg"
+                                src="../../images/project-pic-3.jpg"
                                 class="image_project"
                                 alt="project"
                             />
                         </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-2.jpg"
+                                src="../../images/project-pic-3.jpg"
                                 class="image_project"
                                 alt="project"
                             />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">{{ props.name }}</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle">
+                                {{ props.subTitle }}
+                            </span>
                         </div>
                     </div>
                 </div>

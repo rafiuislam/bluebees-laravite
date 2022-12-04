@@ -19,7 +19,7 @@ const props = reactive({
     <HomeBanner />
 
     <!-- About Us -->
-    <section class="about">
+    <section class="about-page">
         <div class="container">
             <div class="d-flex justify-content-center">
                 <h1 class="title">{{ props.title }}</h1>
