@@ -2,6 +2,35 @@
 import HomeBanner from "../components/HomeBanner.vue";
 
 import { reactive } from "vue";
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    "use strict";
+    window.addEventListener(
+        "load",
+        function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(
+                forms,
+                function (form) {
+                    form.addEventListener(
+                        "submit",
+                        function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add("was-validated");
+                        },
+                        false
+                    );
+                }
+            );
+        },
+        false
+    );
+})();
 
 const props = reactive({
     title: "Let’s Get Your Project Started!",
@@ -79,9 +108,9 @@ const props = reactive({
                 If you have any queries or need any kind of helps then sent us a
                 message. Our Experts will help you to grow your business !
             </div>
-            <form>
+            <form class="needs-validation" novalidate>
                 <div class="row">
-                    <div class="form-group col-md-6 pb-4">
+                    <div class="form-group col-md-6 pb-4 position-relative">
                         <label for="fname">First Name *</label>
                         <input
                             type="text"
@@ -89,9 +118,14 @@ const props = reactive({
                             id="fname"
                             name="fname"
                             placeholder="Your First Name"
+                            required
                         />
+
+                        <div class="invalid-feedback">
+                            Please choose a username
+                        </div>
                     </div>
-                    <div class="form-group col-md-6 pb-4">
+                    <div class="form-group col-md-6 pb-4 position-relative">
                         <label for="lname">Last Name *</label>
                         <input
                             type="text"
@@ -99,33 +133,42 @@ const props = reactive({
                             id="lname"
                             name="lname"
                             placeholder="Your Last Name"
+                            required
                         />
+
+                        <div class="invalid-feedback">
+                            Please choose a last name
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6 pb-4">
+                    <div class="form-group col-md-6 pb-4 position-relative">
                         <label for="inputEmail4">Email *</label>
                         <input
                             type="email"
                             class="form-control"
                             id="inputEmail4"
                             placeholder="Your Email"
+                            required
                         />
+                        <div class="invalid-feedback">
+                            Please choose a email
+                        </div>
                     </div>
-                    <div class="form-group col-md-6 pb-4">
+                    <div class="form-group col-md-6 pb-4 position-relative">
                         <label for="cell">Phone</label>
                         <input
                             type="number"
                             class="form-control"
                             id="cell"
-                            name="cell"
-                            min="7"
-                            max="15"
                             placeholder="Your Phone"
                         />
+                        <div class="invalid-feedback">
+                            Please choose a number
+                        </div>
                     </div>
                 </div>
-                <div class="form-group pb-4">
+                <div class="form-group pb-4 position-relative">
                     <label for="cname">Company Name</label>
                     <input
                         type="text"
@@ -134,6 +177,9 @@ const props = reactive({
                         name="cname"
                         placeholder="Company name"
                     />
+                    <div class="invalid-feedback">
+                        Please choose a company name
+                    </div>
                 </div>
                 <div class="form-group pb-4">
                     <label for="sname">Service Name</label>
@@ -182,15 +228,15 @@ const props = reactive({
                         <a href="#" class="box">
                             <i class="fa fa-linkedin fa-x"></i>
                         </a>
-                        <a href="#" id="twit" class="box">
+                        <a href="#" class="box">
                             <i class="fa fa-twitter fa-x"></i>
                         </a>
                     </div>
                     <button
                         type="submit"
-                        class="col-lg-6 col-md-6 col-sm-12 sign-btn"
+                        class="col-lg-6 col-md-6 col-sm-12 send-btn"
                     >
-                        Sign in
+                        Send
                     </button>
                 </div>
             </form>

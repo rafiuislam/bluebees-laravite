@@ -48,11 +48,11 @@
         top: 525px;
         background-color: #cad8e8;
         &::after {
-            @include sudo(100%, 100%, left, 0, top, -18px, bg);
+            @include sudo(100%, 100%, left, 0, top, -20px, bg);
         }
 
         @media (max-width: 1400px) {
-            top: 47.3%;
+            top: 47.17%;
             height: 615px;
         }
         @media (max-width: 1200px) {
@@ -76,13 +76,16 @@
     }
 
     button {
-        border: 1.5px solid #00abe5;
+        border: 1px solid #c3c3c3;
         border-radius: 0px 15px;
         padding: 18px 16px;
         font-family: "Nunito Sans", sans-serif;
-        @include font(btn, 17, 28, regular);
+        @include font(false, 17, 27, regular);
+        transition: 0.6s;
     }
-    .btn {
+    .btn:hover {
+        color: #11516d;
+        border: 1px solid #00abe5;
         box-shadow: 2px 2px 6px rgba(255, 255, 255, 0),
             2px 2px 6px rgba(0, 0, 0, 0.55);
     }
@@ -171,6 +174,7 @@
                 @media (max-width: 576px) {
                     padding-bottom: 80px;
                     text-align: center;
+                    width: 100%;
                 }
             }
 

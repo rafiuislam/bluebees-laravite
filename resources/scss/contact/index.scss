@@ -16,7 +16,7 @@
         transition: all 0.4s ease;
     }
     .title:hover:after {
-        width: 60%;
+        width: 56%;
     }
     .loco {
         padding-bottom: 30px;
@@ -31,16 +31,22 @@
         margin: 0 0px 80px 0px;
         width: 80%;
     }
+    label {
+        font-family: "Nunito Sans", sans-serif;
+        @include font(false, 18, 30, regular);
+        color: #403c3c;
+    }
     .circle {
         position: absolute;
         border-radius: 50%;
+        border: 2px solid #ffffff;
         width: 60px;
         height: 60px;
         object-fit: cover;
         padding: 14px;
         background: rgb(22, 83, 146);
         background: linear-gradient(
-            90deg,
+            160deg,
             rgba(22, 83, 146, 1) 0%,
             rgba(16, 119, 178, 1) 40%,
             rgba(10, 167, 219, 1) 100%
@@ -48,15 +54,11 @@
         z-index: 1;
         left: 45%;
         top: -18%;
-        i {
-            color: white;
-            font-size: 30px;
-        }
 
         @media (max-width: 576px) {
             width: 50px;
             height: 50px;
-            padding: 12px;
+            padding: 8px;
         }
         i {
             color: white;
@@ -85,7 +87,8 @@
     }
     .message {
         font-family: "Nunito Sans", sans-serif;
-        @include font(#4c4d4f, 22, 36, regular);
+        @include font(false, 22, 36, regular);
+        color: #4c4d4f;
         margin: 0 0px 75px 0px;
         width: 75%;
         @media (max-width: 1200px) {
@@ -106,14 +109,12 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width: 768px) {
-        }
         @media (max-width: 576px) {
             justify-content: space-evenly;
         }
     }
 
-    .sign-btn {
+    .send-btn {
         background-color: #0d4e96;
         border-radius: 0px 15px;
         padding: 10px 50px;
@@ -123,11 +124,12 @@
         @include font(white, 17, 29, semi-bold);
         transition: 0.3s;
     }
-    .sign-btn:hover {
+    .send-btn:hover {
         background-color: #00abe5;
         color: white;
     }
     .btn {
+        border: 1px solid #c3c3c3;
         background-color: #fefbfb;
         font-family: "Nunito Sans", sans-serif;
         @include font(primary, 15, 28, regular);
@@ -151,6 +153,7 @@
         margin: 0 0px;
         flex-wrap: wrap;
         padding-top: 10px;
+        padding-left: 0;
         i {
             font-size: 20px;
         }
@@ -161,21 +164,17 @@
         }
     }
     .social-links a {
-        transition: 0.5s;
+        transition: 0.2s;
     }
     .social-links a:hover {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
         color: #00abe5;
     }
 
     .box {
-        // margin: 7px;
         padding: 6px 14px;
-        // border-radius: 5px;
-        // background-color: white;
-        // box-shadow: 2px 2px 6px rgba(255, 255, 255, 0),
-        //     2px 2px 6px rgba(0, 0, 0, 0.55);
     }
+
     .map-container {
         overflow: hidden;
         padding-bottom: 3%;

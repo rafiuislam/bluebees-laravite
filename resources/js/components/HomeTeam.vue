@@ -13,7 +13,7 @@
             </div>
 
             <div class="text-center team-work">
-                <button class="btn">See More Our Team work</button>
+                <button class="btn">See More Our Team</button>
             </div>
             <div class="team-img text-center">
                 <img class="img-fluid" src="../../images/team.png" alt="" />
