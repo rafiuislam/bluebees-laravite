@@ -28,9 +28,12 @@ const props = reactive({
         <!-- Location -->
         <div class="container">
             <div class="row text-center loco">
-                <div class="col-md pb-4">
+                <div class="col-md pb-5 pb-md-4 position-relative">
                     <span class="circle">
-                        <i class="fa fa-home" aria-hidden="false"></i>
+                        <i
+                            class="fa fa-home text-center"
+                            aria-hidden="false"
+                        ></i>
                     </span>
 
                     <button
@@ -41,10 +44,10 @@ const props = reactive({
                         Middle Badda, Gulshan, Dhaka 1212, Bangladesh
                     </button>
                 </div>
-                <div class="col-md pb-4">
-                    <div>
+                <div class="col-md pb-5 pb-md-4 position-relative">
+                    <span class="circle">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
+                    </span>
                     <button
                         type="submit"
                         class="col-lg-6 col-md-6 col-sm-12 btn"
@@ -56,10 +59,10 @@ const props = reactive({
                         info@bluebees.ventures
                     </button>
                 </div>
-                <div class="col-md pb-4">
-                    <div>
+                <div class="col-md pb-5 pb-md-4 position-relative">
+                    <span class="circle">
                         <i class="fa fa-phone" aria-hidden="true"></i>
-                    </div>
+                    </span>
                     <button
                         type="submit"
                         class="col-lg-6 col-md-6 col-sm-12 btn"
