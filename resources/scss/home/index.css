@@ -1,0 +1,8 @@
+@use "../app/links" as *;
+@use "../app/home-banner" as *;
+@use "../app/home-service" as *;
+@use "../app/home-project" as *;
+@use "../app/home-team" as *;
+@use "../app/home-client" as *;
+@use "../home-slider" as *;
+/*# sourceMappingURL=index.css.map */

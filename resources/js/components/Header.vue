@@ -18,8 +18,33 @@
                     <ul class="d-md-flex">
                         <li><router-link to="/">Home</router-link></li>
                         <li><router-link to="/about">About Us</router-link></li>
-                        <li>
-                            <router-link to="/services">Services</router-link>
+                        <li class="dropdown">
+                            <span class="dropbtn">
+                                <router-link to="/services"
+                                    >Services</router-link
+                                >&ensp;
+
+                                <i class="fa fa-caret-down" id="down"></i>
+                            </span>
+                            <div class="dropdown-content">
+                                <a href="#">UI UX Design</a>
+                                <a href="#">Web Application Development</a>
+                                <a href="#">Custom Software Development</a>
+                                <a href="#">Mobile Application Development</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <span class="dropbtn">
+                                <router-link to="/products"
+                                    >Products</router-link
+                                >&ensp;
+                                <i class="fa fa-caret-down" id="down"></i>
+                            </span>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
                         </li>
                         <li>
                             <router-link to="/project">Project</router-link>
@@ -27,9 +52,6 @@
                         <li><router-link to="/team">Team</router-link></li>
                         <li>
                             <router-link to="/contact">Contact</router-link>
-                        </li>
-                        <li>
-                            <router-link to="/products">Products</router-link>
                         </li>
                     </ul>
                 </nav>
@@ -51,8 +73,8 @@ $(document).ready(function () {
     });
 });
 $(document).ready(function () {
-    $("button").click(function () {
-        $("button").toggleClass("collapsed");
+    $(".openClose").click(function () {
+        $(".openClose").toggleClass("collapsed");
     });
 });
 </script>

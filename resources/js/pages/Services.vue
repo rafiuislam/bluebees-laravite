@@ -1,5 +1,106 @@
+<script setup>
+import HomeBanner from "../components/HomeBanner.vue";
+import HomeClient from "../components/HomeClient.vue";
+
+import { reactive } from "vue";
+
+const props = reactive({
+    title: "What We Can Do For You",
+    teamMsg:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare consectetur massa et ultrices. Morbi gravida mi sed ex ultrices consectetur. Proin tincidunt ligula sit amet scelerisque semper. Aenean at nulla et magna interdum scelerisque. Quisque eu ante gravida sem ultrices eleifend. Nam mollis, leo sed sagittis finibus, nulla metus aliquet nisl, sit amet pellentesque lectus magna a ligula. Duis a mauris sit amet lectus pharetra maximus. Proin semper mi id est blandit portti",
+    header: "UI UX Design",
+    subHeader:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    image: "../../images/ui-ux-design-icon.png",
+});
+</script>
+
 <template>
-    <div>
-        <h1>Services</h1>
-    </div>
+    <HomeBanner />
+    <section class="service-page">
+        <!-- Title&header -->
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <h1 class="title">{{ props.title }}</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p>
+                    {{ props.teamMsg }}
+                </p>
+            </div>
+        </div>
+        <div class="client-bg"></div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <div
+                        class="service-item text-center justify-content-center"
+                    >
+                        <div class="service-icon">
+                            <img
+                                src="../../images/ui-ux-design-icon.png"
+                                alt="ui-ux"
+                                class="img-fluid"
+                            />
+                        </div>
+                        <h3>{{ props.header }}</h3>
+                        <p>
+                            {{ props.subHeader }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div
+                        class="service-item text-center justify-content-center"
+                    >
+                        <div class="service-icon">
+                            <img
+                                src="../../images/ui-ux-design-icon.png"
+                                alt="ui-ux"
+                                class="img-fluid"
+                            />
+                        </div>
+                        <h3>{{ props.header }}</h3>
+                        <p>
+                            {{ props.subHeader }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div
+                        class="service-item text-center justify-content-center"
+                    >
+                        <div class="service-icon">
+                            <img
+                                src="../../images/ui-ux-design-icon.png"
+                                alt="ui-ux"
+                                class="img-fluid"
+                            />
+                        </div>
+                        <h3>{{ props.header }}</h3>
+                        <p>
+                            {{ props.subHeader }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div
+                        class="service-item text-center justify-content-center"
+                    >
+                        <div class="service-icon">
+                            <img
+                                src="../../images/ui-ux-design-icon.png"
+                                alt="ui-ux"
+                                class="img-fluid"
+                            />
+                        </div>
+                        <h3>{{ props.header }}</h3>
+                        <p>
+                            {{ props.subHeader }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>

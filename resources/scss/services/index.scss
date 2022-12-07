@@ -1,0 +1,56 @@
+@use "../app/links.scss" as *;
+
+.service-page {
+    position: relative;
+    .container {
+        .row {
+            padding: 140px 0 120px 0;
+        }
+    }
+
+    .client-bg {
+        height: 59%;
+        position: absolute;
+        left: 0;
+        top: 295px;
+        width: 100%;
+        background-color: #f8f8f8;
+        z-index: -1;
+        @media (max-width: 992px) {
+            top: 450px;
+        }
+        @media (max-width: 768px) {
+            top: 450px;
+            height: 74%;
+        }
+    }
+    p {
+        font-family: "Nunito Sans", sans-serif;
+        @include font(primary, 16, 27, light);
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        margin: 0 0px 80px 0px;
+        width: 80%;
+    }
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        .service-icon {
+            padding-bottom: 48px;
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+            }
+        }
+        h3 {
+            padding-bottom: 20px;
+            @include font(secondary, 22, 32, regular);
+        }
+        p {
+            @include font(primary, 16, 26, light);
+            align-self: center;
+        }
+    }
+}
