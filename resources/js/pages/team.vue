@@ -166,11 +166,45 @@ const props = reactive({
                             />
                         </div>
                         <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
+                            <span class="name">Abdul Baten</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle"> Deputy Manager </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">Hasanuzzaman</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle"> UI/UX Designer </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">Md. Mamun Ur Rashid Malik</span>
                         </div>
                         <div class="d-flex justify-content-center">
                             <span class="subTitle">
-                                {{ props.subTitle }}
+                                Sr. Software Engineer
                             </span>
                         </div>
                     </div>
@@ -185,11 +219,96 @@ const props = reactive({
                             />
                         </div>
                         <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
+                            <span class="name">Md. Mobarak Ali</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle"> Front-End Developer </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">Md. Mahi Uddin Mozumder</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle"> UI/UX Designer </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">Md. Rakib Ahmed</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle"> Javascript Developer </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">Md Abdul Aowal</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle"> Md Abdul Aowal </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">Md. Al Faruk</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="subTitle"> App Developer </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 pb-4">
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img
+                                src="../../images/project-pic-3.jpg"
+                                class="image_project"
+                                alt="project"
+                            />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="name">Mahbub-ul-Hasan Nafi</span>
                         </div>
                         <div class="d-flex justify-content-center">
                             <span class="subTitle">
-                                {{ props.subTitle }}
+                                Jr. Software Engineer
                             </span>
                         </div>
                     </div>
@@ -204,145 +323,10 @@ const props = reactive({
                             />
                         </div>
                         <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
+                            <span class="name">Md. Rafiu Islam</span>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle }}
-                            </span>
+                            <span class="subTitle"> Intern </span>
                         </div>
                     </div>
                 </div>
