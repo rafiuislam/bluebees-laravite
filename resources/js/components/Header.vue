@@ -41,10 +41,10 @@
                                 <router-link :to="{ name: 'webApp' }"
                                     >Web Application Development</router-link
                                 >
-                                <router-link :to="{ name: 'mobileApp' }"
+                                <router-link :to="{ name: 'customerSoft' }"
                                     >Custom Software Development</router-link
                                 >
-                                <router-link :to="{ name: 'customerSoft' }"
+                                <router-link :to="{ name: 'mobileApp' }"
                                     >Mobile Application Development</router-link
                                 >
                             </div>
