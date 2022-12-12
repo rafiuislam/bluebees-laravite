@@ -1,6 +1,5 @@
 <script setup>
 import HomeBanner from "../components/HomeBanner.vue";
-import HomeClient from "../components/HomeClient.vue";
 
 import { reactive } from "vue";
 
@@ -17,19 +16,21 @@ const props = reactive({
 
 <template>
     <HomeBanner />
-    <section class="service-page">
+    <section class="services-page">
         <!-- Title&header -->
         <div class="container">
             <div class="d-flex justify-content-center">
                 <h1 class="title">{{ props.title }}</h1>
             </div>
             <div class="d-flex justify-content-center">
-                <p>
+                <p class="text">
                     {{ props.teamMsg }}
                 </p>
             </div>
         </div>
+        <!-- Bg  -->
         <div class="client-bg"></div>
+        <!-- Services -->
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-3 col-md-6 col-12 text-center">

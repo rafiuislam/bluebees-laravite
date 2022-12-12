@@ -7,5 +7,7 @@
 @use "team";
 @use "contact";
 @use "services";
+@use "products";
+@use "ecommerce";
 @use "footer";
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@
                 class="main-box d-flex justify-content-between align-items-center"
             >
                 <h1>
-                    <router-link to="/" class="navbar-brand">
+                    <router-link :to="{ name: 'Home' }" class="navbar-brand">
                         <img
                             src="../../images/logo.png"
                             alt="logo"
@@ -16,42 +16,76 @@
 
                 <nav class="main-menu">
                     <ul class="d-md-flex">
-                        <li><router-link to="/">Home</router-link></li>
-                        <li><router-link to="/about">About Us</router-link></li>
+                        <li>
+                            <router-link :to="{ name: 'Home' }"
+                                >Home</router-link
+                            >
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'About Us' }"
+                                >About Us</router-link
+                            >
+                        </li>
                         <li class="dropdown">
                             <span class="dropbtn">
-                                <router-link to="/services"
+                                <router-link :to="{ name: 'Services' }"
                                     >Services</router-link
                                 >&ensp;
 
                                 <i class="fa fa-caret-down" id="down"></i>
                             </span>
                             <div class="dropdown-content">
-                                <a href="#">UI UX Design</a>
-                                <a href="#">Web Application Development</a>
-                                <a href="#">Custom Software Development</a>
-                                <a href="#">Mobile Application Development</a>
+                                <router-link :to="{ name: 'uiux' }"
+                                    >UI UX Design</router-link
+                                >
+                                <router-link :to="{ name: 'webApp' }"
+                                    >Web Application Development</router-link
+                                >
+                                <router-link :to="{ name: 'mobileApp' }"
+                                    >Custom Software Development</router-link
+                                >
+                                <router-link :to="{ name: 'customerSoft' }"
+                                    >Mobile Application Development</router-link
+                                >
                             </div>
                         </li>
                         <li class="dropdown">
                             <span class="dropbtn">
-                                <router-link to="/products"
+                                <router-link :to="{ name: 'Products' }"
                                     >Products</router-link
                                 >&ensp;
                                 <i class="fa fa-caret-down" id="down"></i>
                             </span>
                             <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <router-link :to="{ name: 'Ecommerce' }"
+                                    >E-Commerce</router-link
+                                >
+
+                                <router-link :to="{ name: 'erp' }"
+                                    >ERP Software</router-link
+                                >
+                                <router-link :to="{ name: 'hr' }"
+                                    >HR Software</router-link
+                                >
+                                <router-link :to="{ name: 'pos' }"
+                                    >Point Of Sales</router-link
+                                >
                             </div>
                         </li>
                         <li>
-                            <router-link to="/project">Project</router-link>
+                            <router-link :to="{ name: 'Project' }"
+                                >Project</router-link
+                            >
                         </li>
-                        <li><router-link to="/team">Team</router-link></li>
                         <li>
-                            <router-link to="/contact">Contact</router-link>
+                            <router-link :to="{ name: 'Team' }"
+                                >Team</router-link
+                            >
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Contact' }"
+                                >Contact</router-link
+                            >
                         </li>
                     </ul>
                 </nav>

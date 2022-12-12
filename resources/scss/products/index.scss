@@ -1,18 +1,17 @@
 @use "../app/links.scss" as *;
 
-.services-page {
+.products-page {
     position: relative;
-    // padding-top: 75px;
+    padding: 0px 0 100px 0;
     margin-top: 75px;
-
     .container {
         .row {
-            padding: 140px 0 120px 0;
+            padding: 140px 0 100px 0;
         }
     }
 
-    .client-bg {
-        height: 57.5%;
+    .products-bg {
+        height: 61.5%;
         position: absolute;
         left: 0;
         top: 295px;
@@ -37,16 +36,16 @@
         display: flex;
         text-align: center;
         justify-content: space-evenly;
-        margin: 0 0px 120px 0px;
+        margin: 0 0px 40px 0px;
         width: 80%;
     }
     p.text {
         margin: 0 0px 80px 0px;
     }
-    .service-item {
+    .products-item {
         display: flex;
         flex-direction: column;
-        .service-icon {
+        .products-icon {
             padding-bottom: 48px;
             img {
                 width: 100px;
@@ -61,6 +60,38 @@
         p {
             @include font(primary, 16, 26, light);
             align-self: center;
+        }
+
+        button {
+            background-color: white;
+            border: 1px solid #00abe5;
+            border-radius: 0px 15px;
+            width: 160px;
+            height: 50px;
+            padding: 10px;
+            text-align: center;
+            color: #11516d;
+            @include font(false, 17, 28, regular);
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            button {
+                background-color: white;
+                border: 1px solid #00abe5;
+                border-radius: 0px 15px;
+                padding: 10px;
+                width: 70%;
+                height: 70%;
+                text-align: center;
+                font-family: "Nunito Sans", sans-serif;
+                color: #11516d;
+                @include font(false, 17, 28, regular);
+            }
+        }
+        button:hover {
+            color: white;
+            background-color: #00abe5;
         }
     }
 }
