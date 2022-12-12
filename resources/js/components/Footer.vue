@@ -9,7 +9,7 @@
                 class="footer-col col-lg-3 col-md-6 col-sm-12 text-center text-md-start"
             >
                 <span>
-                    <router-link to="/">
+                    <router-link :to="{ name: 'Home' }">
                         <img src="../../images/logo.png" alt="logo" />
                     </router-link>
                 </span>
