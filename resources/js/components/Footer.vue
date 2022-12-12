@@ -34,7 +34,7 @@
                 <h4>Our Services</h4>
                 <ul>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'uiux' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -48,7 +48,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'webApp' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -62,7 +62,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'customerSoft' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -76,7 +76,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'mobileApp' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -95,7 +95,7 @@
                 <h4>Important Link</h4>
                 <ul>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'About Us' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -109,7 +109,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'Services' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -123,7 +123,21 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'Products' }">
+                            <div class="icon align-items-center">
+                                <div>
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+
+                                <p>Products</p>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{ name: 'Project' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -137,7 +151,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'Team' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -151,7 +165,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="#">
+                        <router-link :to="{ name: 'Contact' }">
                             <div class="icon align-items-center">
                                 <div>
                                     <i
@@ -160,7 +174,7 @@
                                     ></i>
                                 </div>
 
-                                <p>Career</p>
+                                <p>Contact</p>
                             </div>
                         </router-link>
                     </li>
