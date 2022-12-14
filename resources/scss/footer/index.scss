@@ -83,12 +83,17 @@ footer {
     }
 
     .copy {
+        font-family: "Nunito Sans", sans-serif;
+        @include font(white, 16, 26, regular);
         background-color: #0d4e96;
         color: map-get($colors, white);
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 22px 0;
+        @media (max-width: 576px) {
+            @include font(white, 12, 22, regular);
+        }
     }
 }
 .waves {

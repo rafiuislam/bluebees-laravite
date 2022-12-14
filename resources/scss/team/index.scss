@@ -27,10 +27,8 @@
         text-align: center;
         padding: 20px 0px 10px 0px;
         width: 80%;
-        @media (max-width: 576px) {
-            padding: 10px 0px 10px 0px;
-        }
     }
+
     p {
         @include font(false, 16, 26, light);
         display: flex;
@@ -40,7 +38,7 @@
         width: 80%;
 
         @media (max-width: 576px) {
-            padding: 0px 0px 10px 0px;
+            padding: 0px 0px 40px 0px;
         }
     }
     .subTitle {
@@ -61,7 +59,7 @@
         width: 100%;
     }
     .name.left {
-        padding: 0px 0px 5px 0px;
+        padding: 15px 0px 5px 0px;
     }
     .subTitle.left {
         padding: 0px 0px 10px 0px;
