@@ -9,7 +9,7 @@ import HomeSlider from "../components/HomeSlider.vue";
 
 <template>
     <HomeBanner />
-
+    <div class="gap"></div>
     <!-- service section -->
     <HomeService />
 
