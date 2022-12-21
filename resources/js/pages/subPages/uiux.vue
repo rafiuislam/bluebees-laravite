@@ -25,7 +25,9 @@ const props = reactive({
                 <div
                     class="d-flex justify-content-start text-center text-sm-start"
                 >
-                    <h1 class="title">{{ props.title }}</h1>
+                    <h1 class="title">
+                        {{ props.title }}
+                    </h1>
                 </div>
                 <div class="d-flex justify-content-start">
                     <p class="text text-center text-sm-start">

@@ -9,7 +9,13 @@
     }
     h1.title {
         padding-bottom: 45px;
+
+        @media (max-width: 576px) {
+            display: block;
+            margin: auto;
+        }
     }
+
     button.btn {
         background-color: white;
         border: 1px solid #00abe5;

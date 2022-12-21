@@ -18,19 +18,22 @@
                 >
                     <a href="#" class="box">
                         <i
-                            class="fa fa-facebook fa-2x"
+                            class="fa fa-facebook fa"
                             style="margin: 0px 5px"
                         ></i>
                     </a>
                     <a href="#" class="box">
-                        <i class="fa fa-linkedin fa-2x"></i>
+                        <i
+                            class="fa fa-linkedin fa"
+                            style="margin: 0px 2px"
+                        ></i>
                     </a>
                     <a href="#" class="box">
-                        <i class="fa fa-twitter fa-2x"></i>
+                        <i class="fa fa-twitter fa"></i>
                     </a>
                 </div>
             </div>
-            <div class="footer-col col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-col col-lg-3 col-md-6 col-sm-12 left">
                 <h4>Our Services</h4>
                 <ul>
                     <li>
@@ -91,7 +94,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-col col-lg-2 col-md-6 col-sm-12">
+            <div class="footer-col col-lg-2 col-md-6 col-sm-12 left">
                 <h4>Important Link</h4>
                 <ul>
                     <li>
@@ -180,7 +183,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-col col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-col col-lg-3 col-md-6 col-sm-12 left">
                 <h4>Contact Info</h4>
                 <ul>
                     <li>

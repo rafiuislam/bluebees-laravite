@@ -4,6 +4,7 @@
     .title {
         padding: 0px 0px 45px 0px;
     }
+
     .title:after {
         content: "";
         position: absolute;
@@ -102,7 +103,9 @@
         padding: 15px;
         margin-bottom: 40px;
     }
-
+    img {
+        border-radius: 10px;
+    }
     .project-item {
         height: 100%;
         padding: 10px;

@@ -48,7 +48,7 @@
         top: 525px;
         background-color: #cad8e8;
         &::after {
-            @include sudo(100%, 100%, left, 0, top, -20px, bg);
+            @include sudo(100%, 100%, left, 0, top, -17px, bg);
         }
 
         @media (max-width: 1400px) {

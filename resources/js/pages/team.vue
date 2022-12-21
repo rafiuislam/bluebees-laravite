@@ -30,16 +30,16 @@ const props = reactive({
             </div>
             <!-- employer card -->
             <div class="row sec">
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 pt-2">
                     <div class="project-item-box">
                         <img
-                            src="../../images/project-pic-3.jpg"
-                            class="img-fluid"
+                            src="../../images/teamSlice/md-sir.jpg"
+                            class="img-fluid w3-round"
                             alt="project"
                         />
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-6 col-12">
+                <div class="col-lg-8 col-md-6 col-12">
                     <div class="d-flex justify-content-start">
                         <span class="name left">Mahin Mazher</span>
                     </div>
@@ -83,16 +83,16 @@ const props = reactive({
                 </div>
             </div>
             <div class="row sec">
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 pt-2">
                     <div class="project-item-box">
                         <img
-                            src="../../images/project-pic-3.jpg"
+                            src="../../images/teamSlice/director-sir.jpg"
                             class="img-fluid"
                             alt="project"
                         />
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-6 col-12">
+                <div class="col-lg-8 col-md-6 col-12">
                     <div class="d-flex justify-content-start">
                         <span class="name left">A S M Rezaul Karim</span>
                     </div>
@@ -141,7 +141,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/mipel-vai.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -160,7 +160,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/baten-vai.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -177,7 +177,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/hasan-vai.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -194,7 +194,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/mamun-vai.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -213,7 +213,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/mobarakvai.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -230,7 +230,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/mahiuddin.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -247,7 +247,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/rakib.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -264,7 +264,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/aowal.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -281,7 +281,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/faruk.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -298,7 +298,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/nafi.png"
                                 class="image_project"
                                 alt="project"
                             />
@@ -317,7 +317,7 @@ const props = reactive({
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/teamSlice/rafiu.jpg"
                                 class="image_project"
                                 alt="project"
                             />
