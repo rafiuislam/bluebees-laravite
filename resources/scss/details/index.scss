@@ -5,7 +5,7 @@
     padding: 75px 0 100px 0;
 
     .space {
-        padding: 0 0 40px 0;
+        padding: 0 0 60px 0;
     }
     h1.title {
         padding-bottom: 45px;
@@ -82,9 +82,11 @@
         }
     }
     .image_project {
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
         width: 50%;
 
         @media (max-width: 992px) {

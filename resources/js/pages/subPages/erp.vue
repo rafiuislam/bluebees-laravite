@@ -40,7 +40,7 @@ const props = reactive({
                 </div>
             </div>
             <div
-                class="col-12 col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2 mb-5"
+                class="col-12 col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2 justify-content-between align-items-center"
             >
                 <img
                     src="../../../images/ui-ux-design-icon.png"
