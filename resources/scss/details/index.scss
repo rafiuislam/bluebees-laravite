@@ -81,18 +81,7 @@
             height: 74%;
         }
     }
-    .image_project {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        width: 50%;
 
-        @media (max-width: 992px) {
-            // display: none;
-        }
-    }
     p {
         font-family: "Nunito Sans", sans-serif;
         @include font(primary, 16, 27, light);

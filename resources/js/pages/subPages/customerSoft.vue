@@ -39,14 +39,19 @@ main-box d-flex justify-content-between align-items-center
                     <button class="btn last">Request Demo</button>
                 </div>
             </div>
+            <!-- center Image -->
             <div
                 class="col-12 col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2 mb-5"
             >
-                <img
-                    src="../../../images/ui-ux-design-icon.png"
-                    class="image_project"
-                    alt="project"
-                />
+                <div
+                    class="h-100 w-100 d-flex justify-content-center align-items-center"
+                >
+                    <img
+                        src="../../../images/ui-ux-design-icon.png"
+                        class=""
+                        alt="project"
+                    />
+                </div>
             </div>
         </div>
         <div class="space"></div>
@@ -67,12 +72,17 @@ main-box d-flex justify-content-between align-items-center
                     </p>
                 </div>
             </div>
+            <!-- center Image -->
             <div class="col-12 col-lg-6 col-md-12 col-sm-12 order-1 mb-5">
-                <img
-                    src="../../../images/ui-ux-design-icon.png"
-                    class="image_project"
-                    alt="project"
-                />
+                <div
+                    class="h-100 w-100 d-flex justify-content-center align-items-center"
+                >
+                    <img
+                        src="../../../images/ui-ux-design-icon.png"
+                        class=""
+                        alt="project"
+                    />
+                </div>
             </div>
         </div>
     </section>
