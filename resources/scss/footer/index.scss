@@ -116,6 +116,9 @@ footer {
         height: 100px;
         background: url(../images/wave.png);
         background-size: 900px 100px;
+        @media (max-width: 576px) {
+            background-size: 770px 100px;
+        }
 
         &#wave1 {
             opacity: 1;
