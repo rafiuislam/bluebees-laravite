@@ -1,43 +1,63 @@
 <script setup>
 import HomeBanner from "../components/HomeBanner.vue";
 
-import { reactive } from "vue";
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-    "use strict";
-    window.addEventListener(
-        "load",
-        function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName("needs-validation");
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(
-                forms,
-                function (form) {
-                    form.addEventListener(
-                        "submit",
-                        function (event) {
-                            if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                            }
-                            form.classList.add("was-validated");
-                        },
-                        false
-                    );
-                }
-            );
-        },
-        false
-    );
-})();
+import { reactive, computed } from "vue";
+import useVuelidate from "@vuelidate/core";
+import { required, minLength, email } from "@vuelidate/validators";
 
-const props = reactive({
-    title: "Let’s Get Your Project Started!",
+// const containsUsername = (value) => {
+//     return value.includes("Rafiu");
+// };
 
-    subTitle:
-        "Get in touch with us whether you have an inquiry regarding highlights, preliminaries, evaluating, need a demo, or whatever else, BlueBees AI is prepared to respond to every one of your inquiries. We provide meaningful solutions for products where we can ensure your ROI.",
+const formData = reactive({
+    fname: "",
+    lname: "",
+    email: "",
+    phone: "",
+    company: "",
+    service: "",
+    budget: "",
+    message: "",
 });
+
+const rules = computed(() => {
+    return {
+        fname: {
+            required: required,
+            minLength: minLength(2),
+            // containsUsername: helpers.withMessage(
+            //     "Must contain Rafiu",
+            //     containsUsername
+            // ),
+        },
+        lname: {
+            required: required,
+            minLength: minLength(3),
+        },
+        email: {
+            required: required,
+            email,
+        },
+        phone: {
+            minLength: minLength(10),
+        },
+        company: "",
+        service: "",
+        budget: "",
+        message: "",
+    };
+});
+
+const $v = useVuelidate(rules, formData);
+
+const submitForm = async () => {
+    const result = await $v.value.$validate();
+    if (result) {
+        alert("Form Submitted");
+    } else {
+        alert("Form not Submitted");
+    }
+};
 </script>
 
 <template>
@@ -46,11 +66,15 @@ const props = reactive({
         <!-- Title&header -->
         <div class="container">
             <div class="d-flex justify-content-center">
-                <h1 class="title">{{ props.title }}</h1>
+                <h1 class="title">Let’s Get Your Project Started!</h1>
             </div>
             <div class="d-flex justify-content-center">
                 <p>
-                    {{ props.subTitle }}
+                    Get in touch with us whether you have an inquiry regarding
+                    highlights, preliminaries, evaluating, need a demo, or
+                    whatever else, BlueBees AI is prepared to respond to every
+                    one of your inquiries. We provide meaningful solutions for
+                    products where we can ensure your ROI.
                 </p>
             </div>
         </div>
@@ -102,13 +126,14 @@ const props = reactive({
                 </div>
             </div>
         </div>
-        <!-- Form     -->
+
         <div class="container sec">
             <div class="mx-auto text-center message">
                 If you have any queries or need any kind of helps then sent us a
                 message. Our Experts will help you to grow your business !
             </div>
-            <form class="needs-validation" novalidate>
+            <!-- Form     -->
+            <form @submit.prevent="submitForm">
                 <div class="row">
                     <div class="form-group col-md-6 pb-4 position-relative">
                         <label for="fname">First Name *</label>
@@ -116,14 +141,17 @@ const props = reactive({
                             type="text"
                             class="form-control"
                             id="fname"
-                            name="fname"
                             placeholder="Your First Name"
-                            required
+                            v-model="formData.fname"
                         />
-
-                        <div class="invalid-feedback">
-                            Please choose a username
-                        </div>
+                        <div class="space"></div>
+                        <span
+                            class="text-danger"
+                            v-for="error of $v.fname.$errors"
+                            :key="error.$uid"
+                        >
+                            {{ error.$message }}
+                        </span>
                     </div>
                     <div class="form-group col-md-6 pb-4 position-relative">
                         <label for="lname">Last Name *</label>
@@ -131,29 +159,37 @@ const props = reactive({
                             type="text"
                             class="form-control"
                             id="lname"
-                            name="lname"
                             placeholder="Your Last Name"
-                            required
+                            v-model="formData.lname"
                         />
-
-                        <div class="invalid-feedback">
-                            Please choose a last name
-                        </div>
+                        <div class="space"></div>
+                        <span
+                            class="text-danger"
+                            v-for="error of $v.lname.$errors"
+                            :key="error.$uid"
+                        >
+                            {{ error.$message }}
+                        </span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6 pb-4 position-relative">
-                        <label for="inputEmail4">Email *</label>
+                        <label for="inputEmail">Email *</label>
                         <input
                             type="email"
                             class="form-control"
-                            id="inputEmail4"
+                            id="inputEmail"
                             placeholder="Your Email"
-                            required
+                            v-model="formData.email"
                         />
-                        <div class="invalid-feedback">
-                            Please choose a email
-                        </div>
+                        <div class="space"></div>
+                        <span
+                            class="text-danger"
+                            v-for="error of $v.email.$errors"
+                            :key="error.$uid"
+                        >
+                            {{ error.$message }}
+                        </span>
                     </div>
                     <div class="form-group col-md-6 pb-4 position-relative">
                         <label for="cell">Phone</label>
@@ -162,10 +198,15 @@ const props = reactive({
                             class="form-control"
                             id="cell"
                             placeholder="Your Phone"
+                            v-model="formData.phone"
                         />
-                        <div class="invalid-feedback">
-                            Please choose a number
-                        </div>
+                        <span
+                            class="text-danger"
+                            v-for="error of $v.phone.$errors"
+                            :key="error.$uid"
+                        >
+                            {{ error.$message }}
+                        </span>
                     </div>
                 </div>
                 <div class="form-group pb-4 position-relative">
@@ -174,12 +215,9 @@ const props = reactive({
                         type="text"
                         class="form-control"
                         id="cname"
-                        name="cname"
                         placeholder="Company name"
+                        v-model="formData.company"
                     />
-                    <div class="invalid-feedback">
-                        Please choose a company name
-                    </div>
                 </div>
                 <div class="form-group pb-4">
                     <label for="sname">Service Name</label>
@@ -187,8 +225,8 @@ const props = reactive({
                         type="text"
                         class="form-control"
                         id="sname"
-                        name="sname"
                         placeholder="Service name"
+                        v-model="formData.service"
                     />
                 </div>
                 <div class="form-group pb-4">
@@ -197,8 +235,8 @@ const props = reactive({
                         type="number"
                         class="form-control"
                         id="quantity"
-                        name="quantity"
                         placeholder="Type your budget in Taka"
+                        v-model="formData.budget"
                     />
                 </div>
                 <div class="form-group pb-5">
@@ -210,8 +248,8 @@ const props = reactive({
                         cols="50"
                         class="form-control"
                         id="commet"
-                        name="comment"
                         placeholder="Your Message..."
+                        v-model="formData.message"
                     ></textarea>
                 </div>
                 <div class="social row">
@@ -233,7 +271,7 @@ const props = reactive({
                         </a>
                     </div>
                     <button
-                        type="submit"
+                        @click="handleSubmit"
                         class="col-lg-6 col-md-6 col-sm-12 send-btn"
                     >
                         Send

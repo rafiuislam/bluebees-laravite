@@ -37,6 +37,9 @@
         @include font(false, 18, 30, regular);
         color: #403c3c;
     }
+    .space {
+        padding: 5px 0 0 5px;
+    }
     .circle {
         position: absolute;
         border-radius: 50%;
