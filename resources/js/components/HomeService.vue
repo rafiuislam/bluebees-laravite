@@ -1,38 +1,3 @@
-<template>
-    <div class="container">
-        <div class="box-container">
-            <div class="d-flex justify-content-center">
-                <h1 class="title">{{ props.title }}</h1>
-            </div>
-            <Carousel :settings="settings" :breakpoints="breakpoints">
-                <Slide v-for="slide in 10" :key="slide">
-                    <div class="carousel__item">
-                        <div class="service-container">
-                            <div class="">
-                                <div class="">
-                                    <div class="service-item text-center">
-                                        <div class="service-icon">
-                                            <img
-                                                src="../../images/ui-ux-design-icon.png"
-                                                alt="ui-ux"
-                                                class="img-fluid"
-                                            />
-                                        </div>
-                                        <h3>{{ props.header }}</h3>
-                                        <p>
-                                            {{ props.subHeader }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </Slide>
-            </Carousel>
-        </div>
-    </div>
-</template>
-
 <script>
 import { defineComponent } from "vue";
 import { Carousel, Navigation, Slide } from "vue3-carousel";
@@ -52,7 +17,17 @@ export default defineComponent({
             subHeader:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
             image: "../../images/ui-ux-design-icon.png",
-            header: "UI UX Design",
+            header: [
+                "UI UX Design ",
+                "Web Application ",
+                "Custom Software ",
+                "Mobile Application ",
+                "Consultancy",
+                "E-Commerce",
+                "ERP Software",
+                "HR Software",
+                "Point Of Sales",
+            ],
         },
         // carousel settings
         settings: {
@@ -76,3 +51,38 @@ export default defineComponent({
     }),
 });
 </script>
+
+<template>
+    <div class="container">
+        <div class="box-container">
+            <div class="d-flex justify-content-center">
+                <h1 class="title">{{ props.title }}</h1>
+            </div>
+            <Carousel :settings="settings" :breakpoints="breakpoints">
+                <Slide v-for="(slide, index) in 9" :key="slide">
+                    <div class="carousel__item">
+                        <div class="service-container">
+                            <div class="">
+                                <div class="">
+                                    <div class="service-item text-center">
+                                        <div class="service-icon">
+                                            <img
+                                                src="../../images/ui-ux-design-icon.png"
+                                                alt="ui-ux"
+                                                class="img-fluid"
+                                            />
+                                        </div>
+                                        <h3>{{ props.header[index] }}</h3>
+                                        <p>
+                                            {{ props.subHeader }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Slide>
+            </Carousel>
+        </div>
+    </div>
+</template>

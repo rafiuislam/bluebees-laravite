@@ -5,6 +5,7 @@ import { reactive, computed } from "vue";
 import useVuelidate from "@vuelidate/core";
 import { required, minLength, email } from "@vuelidate/validators";
 
+// custom validator
 // const containsUsername = (value) => {
 //     return value.includes("Rafiu");
 // };

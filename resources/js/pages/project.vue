@@ -28,18 +28,22 @@ const props = reactive({
                 </p>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div
+                    class="col-lg-4 col-md-6 col-12"
+                    v-for="(i, index) in 9"
+                    :key="index"
+                >
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
-                                src="../../images/project-pic-3.jpg"
+                                src="../../images/project-pic-1.jpg"
                                 class="image_project"
                                 alt="project"
                             />
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <!-- <div class="col-lg-4 col-md-6 col-12">
                     <div class="project-item">
                         <div class="project-item-box">
                             <img
@@ -126,7 +130,7 @@ const props = reactive({
                             />
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
