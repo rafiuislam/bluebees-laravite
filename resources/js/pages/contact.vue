@@ -94,8 +94,13 @@ const submitForm = async () => {
                         type="submit"
                         class="col-lg-6 col-md-6 col-sm-12 btn"
                     >
-                        Manama MS Toren, 8th Floor GA-99/3/A/B, Pragati Sarani,
-                        Middle Badda, Gulshan, Dhaka 1212, Bangladesh
+                        <a
+                            href="https://www.google.com/maps/dir//Manama+MS+Toren,+8th+Floor+GA-99%2F3%2FA%2FB,+Dhaka,+1212/@23.7801366,90.3557589,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3755c7371d769487:0xf2345a284c325164!2m2!1d90.4257993!2d23.7801524"
+                        >
+                            Manama MS Toren, 8th Floor GA-99/3/A/B, Pragati
+                            Sarani, Middle Badda, Gulshan, Dhaka 1212,
+                            Bangladesh
+                        </a>
                     </button>
                 </div>
                 <div class="col-md pb-5 pb-md-4 position-relative">
@@ -110,7 +115,9 @@ const submitForm = async () => {
                             @include font(primary, 17, 28, semi-bold);
                         "
                     >
-                        info@bluebees.ventures
+                        <a href="mailto:info@bluebees.ventures">
+                            info@bluebees.ventures
+                        </a>
                     </button>
                 </div>
                 <div class="col-md pb-5 pb-md-4 position-relative">
@@ -122,7 +129,9 @@ const submitForm = async () => {
                         class="col-lg-6 col-md-6 col-sm-12 btn"
                         style="@include font(primary, 17, 28, semi-bold);"
                     >
-                        +880 9638-946339 | +880 16663
+                        <a href="tel:+880 9638-946339 ">
+                            +880 9638-946339 | +880 16663
+                        </a>
                     </button>
                 </div>
             </div>
@@ -286,10 +295,14 @@ const submitForm = async () => {
             style="height: 500px"
         >
             <iframe
-                src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3651.0802091625583!2d90.42361801445638!3d23.780157943556933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sManama%20MS%20Toren%2C%208th%20Floor%20GA-99%2F3%2FA%2FB%2C%20Pragati%20Sarani%2C%20Middle%20Badda%2C%20Gulshan%2C%20Dhaka%201212%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1671859889719!5m2!1sen!2sbd"
+                width="600"
+                height="450"
                 style="border: 0"
-                allowfullscreen
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                frameborder="0"
             ></iframe>
         </div>
     </section>
