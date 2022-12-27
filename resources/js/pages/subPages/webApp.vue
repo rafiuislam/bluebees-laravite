@@ -10,7 +10,7 @@ const props = reactive({
     header: "UI UX Design",
     subHeader:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    image: "../../images/ui-ux-design-icon.png",
+    image: ["../../images/detail01.png", "../../images/detail02.png"],
 });
 </script>
 
@@ -46,11 +46,7 @@ const props = reactive({
                 <div
                     class="h-100 w-100 d-flex justify-content-center align-items-center"
                 >
-                    <img
-                        src="../../../images/ui-ux-design-icon.png"
-                        class=""
-                        alt="project"
-                    />
+                    <img :src="props.image[0]" class="bgImg" alt="project" />
                 </div>
             </div>
         </div>
@@ -75,11 +71,7 @@ const props = reactive({
                 <div
                     class="h-100 w-100 d-flex justify-content-center align-items-center"
                 >
-                    <img
-                        src="../../../images/ui-ux-design-icon.png"
-                        class=""
-                        alt="project"
-                    />
+                    <img :src="props.image[1]" class="bgImg" alt="project" />
                 </div>
             </div>
         </div>

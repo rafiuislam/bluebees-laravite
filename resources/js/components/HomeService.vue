@@ -16,7 +16,17 @@ export default defineComponent({
             title: "Our Services",
             subHeader:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-            image: "../../images/ui-ux-design-icon.png",
+            image: [
+                "../../images/ui-ux-design-icon.png",
+                "../../images/web-application-icon.png",
+                "../../images/consultancy-icon.png",
+                "../../images/Mobile-Application.png",
+                "../../images/consultancy-icon.png",
+                "../../images/e-commerce.png",
+                "../../images/erp-soft.png",
+                "../../images/hr-soft.png",
+                "../../images/pos.png",
+            ],
             header: [
                 "UI UX Design ",
                 "Web Application ",
@@ -59,7 +69,10 @@ export default defineComponent({
                 <h1 class="title">{{ props.title }}</h1>
             </div>
             <Carousel :settings="settings" :breakpoints="breakpoints">
-                <Slide v-for="(slide, index) in 9" :key="slide">
+                <Slide
+                    v-for="(slide, index) in props.header.length"
+                    :key="slide"
+                >
                     <div class="carousel__item">
                         <div class="service-container">
                             <div class="">
@@ -67,9 +80,11 @@ export default defineComponent({
                                     <div class="service-item text-center">
                                         <div class="service-icon">
                                             <img
-                                                src="../../images/ui-ux-design-icon.png"
-                                                alt="ui-ux"
+                                                :src="props.image[index]"
+                                                alt=""
                                                 class="img-fluid"
+                                                width="150%"
+                                                height="150%"
                                             />
                                         </div>
                                         <h3>{{ props.header[index] }}</h3>

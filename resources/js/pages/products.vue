@@ -14,7 +14,12 @@ const props = reactive({
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
     ],
-    image: "../../images/ui-ux-design-icon.png",
+    image: [
+        "../../images/e-commerce.png",
+        "../../images/erp-soft.png",
+        "../../images/hr-soft.png",
+        "../../images/pos.png",
+    ],
 });
 </script>
 
@@ -38,7 +43,7 @@ const props = reactive({
         <div class="container">
             <div class="row text-center">
                 <div
-                    v-for="(i, index) in 4"
+                    v-for="(i, index) in props.header.length"
                     :key="index"
                     class="col-lg-3 col-md-6 col-12 text-center"
                 >
@@ -47,7 +52,7 @@ const props = reactive({
                     >
                         <div class="products-icon">
                             <img
-                                src="../../images/ui-ux-design-icon.png"
+                                :src="props.image[index]"
                                 alt="ui-ux"
                                 class="img-fluid"
                             />

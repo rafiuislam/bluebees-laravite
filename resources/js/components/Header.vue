@@ -1,3 +1,21 @@
+<script setup>
+import { reactive, ref } from "vue";
+
+const props = reactive({
+    logo: "../../images/logo.png",
+});
+
+const isActive = ref(false);
+const displayStyle = ref("none");
+const trans = ref("none");
+
+const toggleClass = () => {
+    isActive.value = !isActive.value;
+    displayStyle.value = displayStyle.value === "block" ? "none" : "block";
+    trans.value = trans.value === "all 0.5s" ? "none" : "all 0.5s";
+};
+</script>
+
 <template>
     <div class="main-wrap">
         <div class="container">
@@ -6,15 +24,14 @@
             >
                 <h1>
                     <router-link :to="{ name: 'Home' }" class="navbar-brand">
-                        <img
-                            src="../../images/logo.png"
-                            alt="logo"
-                            class="logo"
-                        />
+                        <img :src="props.logo" alt="logo" class="logo" />
                     </router-link>
                 </h1>
 
-                <nav class="main-menu">
+                <nav
+                    class="main-menu"
+                    :style="{ display: displayStyle, transition: trans }"
+                >
                     <ul class="d-md-flex">
                         <li>
                             <router-link :to="{ name: 'Home' }"
@@ -90,7 +107,11 @@
                     </ul>
                 </nav>
                 <!-- custom humbarger button -->
-                <button class="toggle navbar-toggler openClose">
+                <button
+                    @click="toggleClass"
+                    class="toggle navbar-toggler openClose"
+                    :class="{ collapsed: isActive }"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -99,16 +120,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-$(document).ready(function () {
-    $(".openClose").click(function () {
-        $(".main-menu").slideToggle();
-    });
-});
-$(document).ready(function () {
-    $(".openClose").click(function () {
-        $(".openClose").toggleClass("collapsed");
-    });
-});
-</script>
