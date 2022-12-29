@@ -55,7 +55,7 @@ const props = reactive({
                         <div class="service-icon">
                             <img
                                 :src="props.image[index]"
-                                alt="ui-ux"
+                                alt="service"
                                 class="img-fluid"
                             />
                         </div>

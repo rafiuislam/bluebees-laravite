@@ -53,7 +53,7 @@ const props = reactive({
                         <div class="products-icon">
                             <img
                                 :src="props.image[index]"
-                                alt="ui-ux"
+                                alt="products"
                                 class="img-fluid"
                             />
                         </div>
