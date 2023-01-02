@@ -1,5 +1,32 @@
 @use "../app/links.scss" as *;
+.bannerimg {
+    position: absolute;
+    top: 111px;
+    width: 100%;
+    @media (max-width: 576px) {
+        transform: scale(2);
+        padding-top: 2.5rem;
+        padding-right: 2rem;
+        top: 95px;
+    }
+}
 
+.route {
+    .routeTitle {
+        position: absolute;
+        top: 266px;
+        z-index: 0;
+        font-family: "Nunito Sans", sans-serif;
+        @include font(white, 80, 32, regular);
+    }
+
+    @media (max-width: 576px) {
+        .routeTitle {
+            @include font(white, 40, 22, regular);
+            top: 185px;
+        }
+    }
+}
 .products-ecommerce {
     position: relative;
     padding: 75px 0 100px 0;

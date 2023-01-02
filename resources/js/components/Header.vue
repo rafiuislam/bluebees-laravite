@@ -83,14 +83,14 @@ const toggleClass = () => {
                                     >UI UX Design</router-link
                                 >
                                 <router-link :to="{ name: 'webApp' }"
-                                    >Web Application Development</router-link
-                                >
+                                    >Web Application
+                                </router-link>
                                 <router-link :to="{ name: 'customerSoft' }"
-                                    >Custom Software Development</router-link
-                                >
+                                    >Custom Software
+                                </router-link>
                                 <router-link :to="{ name: 'mobileApp' }"
-                                    >Mobile Application Development</router-link
-                                >
+                                    >Mobile Application
+                                </router-link>
                             </div>
                         </li>
 

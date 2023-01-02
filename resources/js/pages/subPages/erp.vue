@@ -14,11 +14,17 @@ const props = reactive({
         "../../images/e-commerce-pic-1.jpg",
         "../../images/e-commerce-pic-2.jpg",
     ],
+    bannerImg: "../../images/e-commerce-inner-banner.jpg",
 });
 </script>
 
 <template>
     <HomeBanner />
+    <!-- Route Banner -->
+    <img class="img-fluid bannerimg" :src="props.bannerImg" alt="" />
+    <div class="d-flex justify-content-center route">
+        <p class="routeTitle">Enterprise Resource Planning</p>
+    </div>
     <section class="products-ecommerce">
         <!-- Title&header -->
         <div

@@ -19,7 +19,7 @@ const props = reactive({
         "../../images/Mobile-Application.png",
         "../../images/consultancy-icon.png",
     ],
-    routes: ["uiux", "webApp", "customerSoft", "mobileApp"],
+    routes: ["uiux", "webApp", "mobileApp", "customerSoft"],
 });
 </script>
 
