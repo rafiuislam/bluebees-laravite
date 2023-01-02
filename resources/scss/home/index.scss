@@ -1,10 +1,16 @@
 @use "../app/links" as *;
 @use "../app/home-banner" as *;
 @use "../app/home-service" as *;
+@use "../app/home-product" as *;
 @use "../app/home-project" as *;
 @use "../app/home-team" as *;
 @use "../app/home-client" as *;
 @use "../home-slider" as *;
 .gap {
     padding-top: 75px;
+}
+.title {
+    @media (max-width: 576px) {
+        padding-top: 20px;
+    }
 }

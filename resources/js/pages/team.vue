@@ -59,12 +59,17 @@ const props = reactive({
         "../../images/teamSlice/rafiu.jpg",
         "../../images/project-pic-3.jpg",
     ],
+    bannerImg: "../../images/team-hero-banner.jpg",
 });
 </script>
 
 <template>
     <HomeBanner />
-
+    <!-- Route Banner -->
+    <img class="img-fluid bannerimg" :src="props.bannerImg" alt="" />
+    <div class="d-flex justify-content-center route">
+        <p class="routeTitle">Team</p>
+    </div>
     <!-- project section -->
     <section class="project-section team-page">
         <div class="container">
@@ -149,6 +154,17 @@ const props = reactive({
                                 class="image_project"
                                 alt="project"
                             />
+                            <a href="#" class="box">
+                                <i class="fa fa-linkedin fa-x"></i>
+                            </a>
+                            <a
+                                href="#"
+                                id="twit"
+                                class="box"
+                                :style="{ top: '40px' }"
+                            >
+                                <i class="fa fa-twitter fa-x"></i>
+                            </a>
                         </div>
                         <div class="d-flex justify-content-center">
                             <span class="name">{{ props.name2[index] }}</span>
@@ -160,215 +176,6 @@ const props = reactive({
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/baten-vai.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle[index] }}</span
-                            >
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/hasan-vai.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">{{
-                                props.subTitle[index]
-                            }}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/mamun-vai.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle[index] }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/mobarakvai.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">{{
-                                props.subTitle[index]
-                            }}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/mahiuddin.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle"
-                                >{{ props.subTitle[index] }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/rakib.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle[index] }}</span
-                            >
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/aowal.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle[index] }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/faruk.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">{{
-                                props.subTitle[index]
-                            }}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/nafi.png"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle[index] }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/teamSlice/rafiu.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle[index] }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 pb-4">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="name">{{ props.name[index] }}</span>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="subTitle">
-                                {{ props.subTitle[index] }}
-                            </span>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>

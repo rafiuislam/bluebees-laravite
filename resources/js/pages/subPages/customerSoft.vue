@@ -10,7 +10,10 @@ const props = reactive({
     header: "UI UX Design",
     subHeader:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    image: ["../../images/detail01.png", "../../images/detail02.png"],
+    image: [
+        "../../images/e-commerce-pic-1.jpg",
+        "../../images/e-commerce-pic-2.jpg",
+    ],
 });
 </script>
 main-box d-flex justify-content-between align-items-center

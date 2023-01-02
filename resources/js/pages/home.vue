@@ -1,7 +1,8 @@
 <script setup>
 import HomeBanner from "../components/HomeBanner.vue";
-import HomeService from "../components/HomeService.vue";
+import HomeProduct from "../components/HomeProduct.vue";
 import HomeProject from "../components/HomeProject.vue";
+import HomeService from "../components/HomeService.vue";
 import HomeTeam from "../components/HomeTeam.vue";
 import HomeClient from "../components/HomeClient.vue";
 import HomeSlider from "../components/HomeSlider.vue";
@@ -10,11 +11,14 @@ import HomeSlider from "../components/HomeSlider.vue";
 <template>
     <HomeBanner />
     <div class="gap"></div>
-    <!-- service section -->
-    <HomeService />
+    <!-- product section -->
+    <HomeProduct />
 
     <!-- project section -->
     <HomeProject />
+
+    <!-- service section -->
+    <HomeService />
 
     <!-- Team section -->
 

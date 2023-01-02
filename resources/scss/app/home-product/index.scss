@@ -1,0 +1,92 @@
+@use "../links.scss" as *;
+
+.product {
+    position: relative;
+    margin-top: 0px;
+
+    .container {
+        .row {
+            padding: 0px 0 0px 0;
+        }
+    }
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+        cursor: pointer;
+        padding-bottom: 45px;
+
+        @media (max-width: 576px) {
+            padding-top: 20px;
+        }
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 4.5%;
+        width: 0;
+        height: 6px;
+        top: -5px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 90%;
+    }
+
+    .client-bg {
+        height: 57.5%;
+        position: absolute;
+        left: 0;
+        top: 295px;
+        width: 100%;
+        background-color: #f8f8f8;
+        z-index: -1;
+        @media (max-width: 992px) {
+            top: 450px;
+        }
+        @media (max-width: 768px) {
+            top: 469px;
+            height: 74%;
+        }
+        @media (max-width: 576px) {
+            top: 569px;
+            height: 74%;
+        }
+    }
+
+    p {
+        font-family: "Nunito Sans", sans-serif;
+        @include font(primary, 16, 27, light);
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        margin: 0 0px 120px 0px;
+        width: 100%;
+    }
+    p.text {
+        margin: 0 0px 80px 0px;
+    }
+    .products-item {
+        display: flex;
+        flex-direction: column;
+        .products-icon {
+            padding-bottom: 48px;
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+        h3 {
+            padding-bottom: 20px;
+            @include font(secondary, 22, 32, regular);
+        }
+        p {
+            @include font(primary, 16, 26, light);
+            align-self: center;
+        }
+    }
+}

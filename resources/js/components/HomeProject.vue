@@ -6,11 +6,18 @@ const props = reactive({
     subHeader:
         "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: [
-        "../../images/project-pic-1.jpg",
-        "../../images/project-pic-2.jpg",
-        "../../images/project-pic-3.jpg",
-        "../../images/project-pic-4.jpg",
-        "../../images/project-pic-5.jpg",
+        "../../images/project-pic-01.jpg",
+        "../../images/project-pic-02.jpg",
+        "../../images/project-pic-03.jpg",
+        "../../images/project-pic-04.jpg",
+        "../../images/project-pic-05.jpg",
+    ],
+    websiteUrl: [
+        "https://nilam.xyz/",
+        "https://trux24.com/",
+        "https://xirooms.com/",
+        "https://xceramics.com/",
+        "https://www.knittersland.com/",
     ],
 });
 </script>
@@ -37,11 +44,13 @@ const props = reactive({
                 >
                     <div class="project-item">
                         <div class="project-item-box">
-                            <img
-                                :src="props.image[index]"
-                                class="image_project"
-                                alt="project"
-                            />
+                            <a :href="props.websiteUrl[index]" target="_blank">
+                                <img
+                                    :src="props.image[index]"
+                                    class="image_project"
+                                    alt="project"
+                                />
+                            </a>
                             <div
                                 v-if="
                                     props.image[index] ==

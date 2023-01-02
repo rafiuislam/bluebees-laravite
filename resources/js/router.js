@@ -26,38 +26,44 @@ const routes = [
     {
         path: "/about",
         name: "About Us",
-        // component: about,
+
         component: () => import("./pages/about.vue"),
     },
     {
         path: "/services",
         name: "Services",
-        // component: services,
+
         component: () => import("./pages/services.vue"),
     },
     {
         path: "/products",
         name: "Products",
-        // component: products,
+
         component: () => import("./pages/products.vue"),
     },
     {
         path: "/project",
         name: "Project",
-        // component: project,
+
         component: () => import("./pages/project.vue"),
+    },
+    {
+        path: "/gallery",
+        name: "Gallery",
+
+        component: () => import("./pages/gallery.vue"),
     },
 
     {
         path: "/team",
         name: "Team",
-        // component: team,
+
         component: () => import("./pages/team.vue"),
     },
     {
         path: "/contact",
         name: "Contact",
-        // component: contact,
+
         component: () => import("./pages/contact.vue"),
     },
     // subRoutes

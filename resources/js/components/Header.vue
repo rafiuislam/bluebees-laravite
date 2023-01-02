@@ -30,7 +30,11 @@ const toggleClass = () => {
 
                 <nav
                     class="main-menu"
-                    :style="{ display: displayStyle, transition: trans }"
+                    :style="{
+                        display: displayStyle,
+
+                        transition: trans,
+                    }"
                 >
                     <ul class="d-md-flex">
                         <li>
@@ -42,29 +46,6 @@ const toggleClass = () => {
                             <router-link :to="{ name: 'About Us' }"
                                 >About Us</router-link
                             >
-                        </li>
-                        <li class="dropdown">
-                            <span class="dropbtn">
-                                <router-link :to="{ name: 'Services' }"
-                                    >Services</router-link
-                                >&ensp;
-
-                                <i class="fa fa-caret-down" id="down"></i>
-                            </span>
-                            <div class="dropdown-content">
-                                <router-link :to="{ name: 'uiux' }"
-                                    >UI UX Design</router-link
-                                >
-                                <router-link :to="{ name: 'webApp' }"
-                                    >Web Application Development</router-link
-                                >
-                                <router-link :to="{ name: 'customerSoft' }"
-                                    >Custom Software Development</router-link
-                                >
-                                <router-link :to="{ name: 'mobileApp' }"
-                                    >Mobile Application Development</router-link
-                                >
-                            </div>
                         </li>
                         <li class="dropdown">
                             <span class="dropbtn">
@@ -89,6 +70,30 @@ const toggleClass = () => {
                                 >
                             </div>
                         </li>
+                        <li class="dropdown">
+                            <span class="dropbtn">
+                                <router-link :to="{ name: 'Services' }"
+                                    >Services</router-link
+                                >&ensp;
+
+                                <i class="fa fa-caret-down" id="down"></i>
+                            </span>
+                            <div class="dropdown-content">
+                                <router-link :to="{ name: 'uiux' }"
+                                    >UI UX Design</router-link
+                                >
+                                <router-link :to="{ name: 'webApp' }"
+                                    >Web Application Development</router-link
+                                >
+                                <router-link :to="{ name: 'customerSoft' }"
+                                    >Custom Software Development</router-link
+                                >
+                                <router-link :to="{ name: 'mobileApp' }"
+                                    >Mobile Application Development</router-link
+                                >
+                            </div>
+                        </li>
+
                         <li>
                             <router-link :to="{ name: 'Project' }"
                                 >Project</router-link
@@ -97,6 +102,11 @@ const toggleClass = () => {
                         <li>
                             <router-link :to="{ name: 'Team' }"
                                 >Team</router-link
+                            >
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'Gallery' }"
+                                >Gallery</router-link
                             >
                         </li>
                         <li>

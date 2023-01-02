@@ -5,10 +5,11 @@ import { reactive, computed } from "vue";
 import useVuelidate from "@vuelidate/core";
 import { required, minLength, email } from "@vuelidate/validators";
 
-// custom validator
-// const containsUsername = (value) => {
-//     return value.includes("Rafiu");
-// };
+const props = reactive({
+    title: "About Us",
+
+    bannerImg: "../../images/contact-hero-banner.jpg",
+});
 
 const formData = reactive({
     fname: "",
@@ -63,6 +64,12 @@ const submitForm = async () => {
 
 <template>
     <HomeBanner />
+    <!-- Route Banner -->
+    <img class="img-fluid bannerimg" :src="props.bannerImg" alt="" />
+    <div class="d-flex justify-content-center route">
+        <p class="routeTitle">Contact</p>
+    </div>
+
     <section class="contact-page">
         <!-- Title&header -->
         <div class="container">

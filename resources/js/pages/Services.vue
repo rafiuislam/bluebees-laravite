@@ -22,11 +22,18 @@ const props = reactive({
         "../../images/Mobile-Application.png",
         "../../images/consultancy-icon.png",
     ],
+    routes: ["uiux", "webApp", "customerSoft", "mobileApp"],
+    bannerImg: "../../images/product-inner-banner.jpg",
 });
 </script>
 
 <template>
     <HomeBanner />
+    <!-- Route Banner -->
+    <img class="img-fluid bannerimg" :src="props.bannerImg" alt="" />
+    <div class="d-flex justify-content-center route">
+        <p class="routeTitle">Services</p>
+    </div>
     <section class="services-page">
         <!-- Title&header -->
         <div class="container">
@@ -39,6 +46,7 @@ const props = reactive({
                 </p>
             </div>
         </div>
+
         <!-- Bg  -->
         <div class="client-bg"></div>
         <!-- Services -->
@@ -52,70 +60,21 @@ const props = reactive({
                     <div
                         class="service-item text-center justify-content-center"
                     >
-                        <div class="service-icon">
-                            <img
-                                :src="props.image[index]"
-                                alt="service"
-                                class="img-fluid"
-                            />
-                        </div>
-                        <h3>{{ props.header[index] }}</h3>
-                        <p>
-                            {{ props.subHeader }}
-                        </p>
+                        <router-link :to="{ name: props.routes[index] }">
+                            <div class="service-icon">
+                                <img
+                                    :src="props.image[index]"
+                                    alt="service"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <h3>{{ props.header[index] }}</h3>
+                            <p>
+                                {{ props.subHeader }}
+                            </p>
+                        </router-link>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6 col-12">
-                    <div
-                        class="service-item text-center justify-content-center"
-                    >
-                        <div class="service-icon">
-                            <img
-                                src="../../images/ui-ux-design-icon.png"
-                                alt="ui-ux"
-                                class="img-fluid"
-                            />
-                        </div>
-                        <h3>{{ props.header }}</h3>
-                        <p>
-                            {{ props.subHeader }}
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div
-                        class="service-item text-center justify-content-center"
-                    >
-                        <div class="service-icon">
-                            <img
-                                src="../../images/ui-ux-design-icon.png"
-                                alt="ui-ux"
-                                class="img-fluid"
-                            />
-                        </div>
-                        <h3>{{ props.header }}</h3>
-                        <p>
-                            {{ props.subHeader }}
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div
-                        class="service-item text-center justify-content-center"
-                    >
-                        <div class="service-icon">
-                            <img
-                                src="../../images/ui-ux-design-icon.png"
-                                alt="ui-ux"
-                                class="img-fluid"
-                            />
-                        </div>
-                        <h3>{{ props.header }}</h3>
-                        <p>
-                            {{ props.subHeader }}
-                        </p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>

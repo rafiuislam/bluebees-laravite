@@ -20,11 +20,18 @@ const props = reactive({
         "../../images/hr-soft.png",
         "../../images/pos.png",
     ],
+    routes: ["Ecommerce", "erp", "hr", "pos"],
+    bannerImg: "../../images/product-inner-banner.jpg",
 });
 </script>
 
 <template>
     <HomeBanner />
+    <!-- Route Banner -->
+    <img class="img-fluid bannerimg" :src="props.bannerImg" alt="" />
+    <div class="d-flex justify-content-center route">
+        <p class="routeTitle">Products</p>
+    </div>
     <section class="products-page">
         <!-- Title&header -->
         <div class="container">
@@ -37,6 +44,7 @@ const props = reactive({
                 </p>
             </div>
         </div>
+
         <!-- Bg  -->
         <div class="products-bg"></div>
         <!-- Services -->
@@ -61,71 +69,15 @@ const props = reactive({
                         <p>
                             {{ props.subHeader[index] }}
                         </p>
-                        <div class="text-center pb-lg-0 pb-md-5 pb-sm-5 pb-5">
-                            <button class="btn">Veiw More</button>
-                        </div>
+                        <router-link :to="{ name: props.routes[index] }">
+                            <div
+                                class="text-center pb-lg-0 pb-md-5 pb-sm-5 pb-5"
+                            >
+                                <button class="btn">Veiw More</button>
+                            </div>
+                        </router-link>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6 col-12">
-                    <div
-                        class="products-item text-center justify-content-center"
-                    >
-                        <div class="products-icon">
-                            <img
-                                src="../../images/ui-ux-design-icon.png"
-                                alt="ui-ux"
-                                class="img-fluid"
-                            />
-                        </div>
-                        <h3>{{ props.header }}</h3>
-                        <p>
-                            {{ props.subHeader }}
-                        </p>
-                        <div class="text-center pb-lg-0 pb-md-5 pb-sm-5 pb-5">
-                            <button class="btn">Veiw More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div
-                        class="products-item text-center justify-content-center"
-                    >
-                        <div class="products-icon">
-                            <img
-                                src="../../images/ui-ux-design-icon.png"
-                                alt="ui-ux"
-                                class="img-fluid"
-                            />
-                        </div>
-                        <h3>{{ props.header }}</h3>
-                        <p>
-                            {{ props.subHeader }}
-                        </p>
-                        <div class="text-center pb-lg-0 pb-md-5 pb-sm-5 pb-5">
-                            <button class="btn">Veiw More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div
-                        class="products-item text-center justify-content-center"
-                    >
-                        <div class="products-icon">
-                            <img
-                                src="../../images/ui-ux-design-icon.png"
-                                alt="ui-ux"
-                                class="img-fluid"
-                            />
-                        </div>
-                        <h3>{{ props.header }}</h3>
-                        <p>
-                            {{ props.subHeader }}
-                        </p>
-                        <div class="text-center pb-lg-0 pb-md-5 pb-sm-5 pb-5">
-                            <button class="btn">Veiw More</button>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
