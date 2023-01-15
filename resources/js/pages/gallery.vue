@@ -19,9 +19,28 @@ const props = reactive({
         "../../images/g6.JPG",
         "../../images/g7.JPG",
         "../../images/g8.JPG",
-        "../../images/g9.JPG",
+    ],
+    imageTitle: [
+        "Football Tournament",
+        "Football Match",
+        "Tours To Visit Sylhet",
+        "Tours To Visit Saint Martin",
+        "Office Functions",
+        "Birthday Parties",
+        "Inhouse Events",
+        "Award Ceremony",
     ],
     bannerImg: "../../images/team-hero-banner.jpg",
+    routes: [
+        "FootballTournament",
+        "FootballMatch",
+        "ToursToVisitSylhet",
+        "ToursToVisitSaintMartin",
+        "OfficeFunctions",
+        "BirthdayParties",
+        "InhouseEvents",
+        "AwardCeremony",
+    ],
 });
 </script>
 
@@ -33,120 +52,42 @@ const props = reactive({
         <p class="routeTitle">Gallery</p>
     </div>
     <!-- project section -->
-    <section class="project-section project">
+    <section class="project-section gallery-page">
         <div class="container">
             <div class="d-flex justify-content-center">
                 <h1 class="title">{{ props.title }}</h1>
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center text-center">
                 <p>
                     {{ props.teamMsg }}
                 </p>
             </div>
             <div class="row">
                 <div
-                    class="col-lg-4 col-md-6 col-12"
+                    class="col-lg-2 col-md-4 col-sm-6 col-12 text-center"
                     v-for="(i, index) in props.image.length"
                     :key="index"
                 >
                     <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                class="image_project"
-                                :src="props.image[index]"
-                                alt="People"
-                            />
-                        </div>
+                        <router-link :to="{ name: props.routes[index] }">
+                            <div class="project-item-box">
+                                <img
+                                    class="image_project"
+                                    :src="props.image[index]"
+                                    alt="People"
+                                />
+                                <div
+                                    class="mx-auto text-center"
+                                    style="width: 200px"
+                                >
+                                    <p class="spaceBottom">
+                                        {{ props.imageTitle[index] }}
+                                    </p>
+                                </div>
+                            </div>
+                        </router-link>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-1.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-2.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-4.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-5.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-1.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-2.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>

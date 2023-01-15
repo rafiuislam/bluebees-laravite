@@ -2,9 +2,9 @@
 import { reactive } from "vue";
 
 const props = reactive({
-    title: "Our Project",
+    title: "Our Projects",
     subHeader:
-        "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse amet, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     image: [
         "../../images/project-pic-01.jpg",
         "../../images/project-pic-02.jpg",
@@ -65,55 +65,6 @@ const props = reactive({
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-2.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-3.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-4.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <div class="project-item-box">
-                            <img
-                                src="../../images/project-pic-5.jpg"
-                                class="image_project"
-                                alt="project"
-                            />
-                            <div class="text-center project-work">
-                                <router-link :to="{ name: 'Project' }">
-                                    <button class="btn">Veiw More</button>
-                                </router-link>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>

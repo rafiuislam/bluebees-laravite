@@ -30,7 +30,7 @@
 
         @media (max-width: 1400px) {
             // border: 3px solid red;
-            height: 39.7%;
+            height: 40.8%;
             width: calc(50% - 35%);
             top: 0%;
         }
@@ -77,13 +77,17 @@
     }
     .project-item {
         height: 100%;
-        padding-bottom: 30px;
+        padding-bottom: 0;
         position: relative;
+
         .project-item-box {
             height: 100%;
+            padding-bottom: 27px;
             &.first {
                 background-color: #f8f8f8;
                 border-bottom-right-radius: 100px;
+                padding-bottom: 0;
+                height: 95%;
             }
             .image_project {
                 height: 100%;
@@ -94,7 +98,7 @@
             .project-work {
                 position: absolute;
                 right: 0;
-                bottom: 10%;
+                bottom: 8%;
 
                 button {
                     background-color: #00abe5;

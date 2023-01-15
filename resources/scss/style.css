@@ -4,10 +4,12 @@
 @use "home";
 @use "about";
 @use "project";
+@use "gallery";
+@use "gallery-details";
 @use "team";
 @use "contact";
 @use "services";
 @use "products";
-@use "ecommerce";
+@use "details";
 @use "footer";
 /*# sourceMappingURL=style.css.map */

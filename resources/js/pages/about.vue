@@ -19,10 +19,11 @@ const props = reactive({
 <template>
     <HomeBanner />
     <!-- Route Banner -->
-    <img class="img-fluid bannerimg" :src="props.bannerImg" alt="" />
-    <div class="d-flex justify-content-center route">
-        <p class="routeTitle">About Us</p>
-        <p class="routePara">Home > About Us</p>
+    <div class="page-ban">
+        <img class="bannerimg" :src="props.bannerImg" alt="" />
+        <div class="d-flex justify-content-center route">
+            <p class="routeTitle">About Us</p>
+        </div>
     </div>
 
     <!-- About Us -->

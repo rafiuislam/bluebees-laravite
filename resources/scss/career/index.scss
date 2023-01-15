@@ -1,0 +1,213 @@
+@use "../app/links.scss" as *;
+
+.career-page {
+    position: relative;
+    padding-top: 75px;
+    .title {
+        padding: 0px 0px 45px 0px;
+        @media (max-width: 576px) {
+            padding-top: 20px;
+        }
+    }
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 16.5%;
+        width: 0;
+        height: 6px;
+        top: -15px;
+        border-radius: 10px;
+        background: #f1f7ff;
+        transition: all 0.4s ease;
+    }
+    .title:hover:after {
+        width: 56%;
+    }
+    .loco {
+        padding-bottom: 140px;
+    }
+    h1 {
+        font-family: "Nunito Sans", sans-serif;
+        @include font(title, 24, 30, bold);
+        margin-top: 20px;
+    }
+
+    p {
+        font-family: "Nunito Sans", sans-serif;
+        @include font(primary, 18, 64, regular);
+    }
+
+    .space {
+        padding: 5px;
+    }
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        background-color: #ffffff;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        padding: 14px;
+        z-index: 100;
+        left: 45%;
+        top: -15%;
+        box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.2),
+            2px 2px 6px rgba(0, 0, 0, 0.2);
+        i.blue {
+            color: #a3a2a2;
+        }
+
+        @media (max-width: 576px) {
+            width: 50px;
+            height: 50px;
+            padding: 8px;
+        }
+        i {
+            color: white;
+            font-size: 25px;
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 576px) {
+            justify-content: space-evenly;
+        }
+    }
+
+    .btn {
+        // border: 1px solid #c3c3c3;
+        background-color: #ffffff;
+        font-family: "Nunito Sans", sans-serif;
+        color: #727275;
+        font-size: 0.9375rem;
+        line-height: 1.75rem;
+        font-weight: 400;
+        width: 428px;
+        height: 162px;
+        transition: 0.6s;
+        box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.1),
+            2px 2px 6px rgba(0, 0, 0, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.1);
+        @media (max-width: 576px) {
+            justify-content: space-evenly;
+            width: 100%;
+        }
+    }
+    .btn:hover {
+        border: 1px solid #00abe5;
+        box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.2),
+            2px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .btn:hover + .circle i.blue {
+        color: #00abe5;
+    }
+}
+
+.reg {
+    position: relative;
+    padding-bottom: 100px;
+    @media (max-width: 768px) {
+        padding-bottom: 175px;
+    }
+
+    .container {
+        padding-bottom: 100px;
+    }
+
+    .title {
+        position: relative;
+        color: map-get($colors, title);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .title:after {
+        content: "";
+        position: absolute;
+        left: 4.5%;
+        width: 0;
+        height: 6px;
+        top: 10px;
+        border-radius: 10px;
+        background: #00abe5;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+    .title:hover:after {
+        width: 90%;
+    }
+    .client-bg {
+        height: 85.6%;
+        position: absolute;
+        left: 0;
+        top: -32px;
+        width: 100%;
+        background-color: #f8f8f8;
+        z-index: -1;
+    }
+
+    .info {
+        padding: 0 70px 0 210px;
+        h1 {
+            font-family: "Khand", sans-serif;
+            @include font(title, 46, 36, medium);
+            padding-bottom: 50px;
+            @media (max-width: 576px) {
+                text-align: center;
+            }
+        }
+        .light {
+            font-family: "Nunito Sans", sans-serif;
+            @include font(title, 24, 38, bold);
+            padding-bottom: 50px;
+            padding-right: 5px;
+            @media (max-width: 576px) {
+                text-align: center;
+            }
+        }
+        p {
+            font-family: "Nunito Sans", sans-serif;
+            @include font(title, 18, 30, regular);
+            text-align: start;
+            padding-bottom: 30px;
+            @media (max-width: 576px) {
+                padding-bottom: 80px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            padding: 110px 70px 0 120px;
+        }
+        @media (max-width: 992px) {
+            padding: 110px 70px 0 120px;
+        }
+        @media (max-width: 768px) {
+            padding: 110px 70px 0 100px;
+        }
+        @media (max-width: 576px) {
+            padding: 111px 40px 0 40px;
+        }
+
+        .send-btn {
+            background-color: #0d4e96;
+            border-radius: 50px;
+            padding: 10px 50px;
+            width: 260px;
+            height: 52px;
+            font-family: "Nunito Sans", sans-serif;
+            @include font(white, 20, 14, bold);
+            transition: 0.3s;
+            margin-bottom: 20px;
+            @media (max-width: 576px) {
+                text-align: center;
+            }
+            &.send-btn:hover {
+                background-color: #00abe5;
+            }
+        }
+    }
+}

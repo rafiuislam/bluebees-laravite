@@ -51,11 +51,18 @@ const rules = computed(() => {
 });
 
 const $v = useVuelidate(rules, formData);
-
+let result;
 const submitForm = async () => {
-    const result = await $v.value.$validate();
+    result = await $v.value.$validate();
     if (result) {
         alert("Form Submitted");
+        formData.fname = "";
+        formData.email = "";
+        formData.phone = "";
+        formData.job = "";
+        formData.quantity = "";
+        formData.time = "";
+        formData.message = "";
     } else {
         alert("Form not Submitted");
     }
@@ -161,11 +168,12 @@ const submitForm = async () => {
                             placeholder="Your First Name"
                             v-model="formData.fname"
                         />
-                        <div class="space"></div>
+
                         <span
                             class="text-danger"
                             v-for="error of $v.fname.$errors"
                             :key="error.$uid"
+                            v-if="!result"
                         >
                             {{ error.$message }}
                         </span>
@@ -179,11 +187,12 @@ const submitForm = async () => {
                             placeholder="Your Last Name"
                             v-model="formData.lname"
                         />
-                        <div class="space"></div>
+
                         <span
                             class="text-danger"
                             v-for="error of $v.lname.$errors"
                             :key="error.$uid"
+                            v-if="!result"
                         >
                             {{ error.$message }}
                         </span>
@@ -199,11 +208,12 @@ const submitForm = async () => {
                             placeholder="Your Email"
                             v-model="formData.email"
                         />
-                        <div class="space"></div>
+
                         <span
                             class="text-danger"
                             v-for="error of $v.email.$errors"
                             :key="error.$uid"
+                            v-if="!result"
                         >
                             {{ error.$message }}
                         </span>
@@ -217,13 +227,6 @@ const submitForm = async () => {
                             placeholder="Your Phone"
                             v-model="formData.phone"
                         />
-                        <span
-                            class="text-danger"
-                            v-for="error of $v.phone.$errors"
-                            :key="error.$uid"
-                        >
-                            {{ error.$message }}
-                        </span>
                     </div>
                 </div>
                 <div class="form-group pb-4 position-relative">

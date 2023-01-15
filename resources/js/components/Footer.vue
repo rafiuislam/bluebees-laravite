@@ -151,21 +151,7 @@ const props = reactive({
                                     ></i>
                                 </div>
 
-                                <p>About us</p>
-                            </div>
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link :to="{ name: 'Services' }">
-                            <div class="icon align-items-center">
-                                <div>
-                                    <i
-                                        class="fa fa-angle-double-right"
-                                        aria-hidden="true"
-                                    ></i>
-                                </div>
-
-                                <p>Services</p>
+                                <p>About Us</p>
                             </div>
                         </router-link>
                     </li>
@@ -184,6 +170,21 @@ const props = reactive({
                         </router-link>
                     </li>
                     <li>
+                        <router-link :to="{ name: 'Services' }">
+                            <div class="icon align-items-center">
+                                <div>
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+
+                                <p>Services</p>
+                            </div>
+                        </router-link>
+                    </li>
+
+                    <li>
                         <router-link :to="{ name: 'Project' }">
                             <div class="icon align-items-center">
                                 <div>
@@ -193,7 +194,7 @@ const props = reactive({
                                     ></i>
                                 </div>
 
-                                <p>Project</p>
+                                <p>Projects</p>
                             </div>
                         </router-link>
                     </li>
@@ -208,6 +209,20 @@ const props = reactive({
                                 </div>
 
                                 <p>Team</p>
+                            </div>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{ name: 'Gallery' }">
+                            <div class="icon align-items-center">
+                                <div>
+                                    <i
+                                        class="fa fa-angle-double-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+
+                                <p>Gallery</p>
                             </div>
                         </router-link>
                     </li>

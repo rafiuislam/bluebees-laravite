@@ -1,20 +1,4 @@
 import { createWebHistory, createRouter } from "vue-router";
-// import home from "./pages/home.vue";
-// // import about from "./pages/about.vue";
-// import services from "./pages/services.vue";
-// import project from "./pages/project.vue";
-// import team from "./pages/team.vue";
-// import contact from "./pages/contact.vue";
-// import products from "./pages/products.vue";
-// // subRoutes
-// import ecommerce from "./pages/subPages/ecommerce.vue";
-// import erp from "./pages/subPages/erp.vue";
-// import hr from "./pages/subPages/hr.vue";
-// import pos from "./pages/subPages/pos.vue";
-// import uiux from "./pages/subPages/uiux.vue";
-// import webApp from "./pages/subPages/webApp.vue";
-// import mobileApp from "./pages/subPages/mobileApp.vue";
-// import customerSoft from "./pages/subPages/customerSoft.vue";
 
 const routes = [
     {
@@ -24,10 +8,22 @@ const routes = [
         component: () => import("./pages/home.vue"),
     },
     {
-        path: "/about",
+        path: "/about/aboutUs",
         name: "About Us",
 
         component: () => import("./pages/about.vue"),
+    },
+    {
+        path: "/about/career",
+        name: "Career",
+
+        component: () => import("./pages/career.vue"),
+    },
+    {
+        path: "/about/career/register",
+        name: "Register",
+
+        component: () => import("./pages/register.vue"),
     },
     {
         path: "/services",
@@ -52,6 +48,46 @@ const routes = [
         name: "Gallery",
 
         component: () => import("./pages/gallery.vue"),
+    },
+    {
+        path: "/gallery/FootballTournament",
+        name: "FootballTournament",
+        component: () => import("./pages/subPages/gallery1.vue"),
+    },
+    {
+        path: "/gallery/FootballMatch",
+        name: "FootballMatch",
+        component: () => import("./pages/subPages/gallery2.vue"),
+    },
+    {
+        path: "/gallery/ToursToVisitSylhet",
+        name: "ToursToVisitSylhet",
+        component: () => import("./pages/subPages/gallery3.vue"),
+    },
+    {
+        path: "/gallery/ToursToVisitSaintMartin",
+        name: "ToursToVisitSaintMartin",
+        component: () => import("./pages/subPages/gallery4.vue"),
+    },
+    {
+        path: "/gallery/OfficeFunctions",
+        name: "OfficeFunctions",
+        component: () => import("./pages/subPages/gallery5.vue"),
+    },
+    {
+        path: "/gallery/BirthdayParties",
+        name: "BirthdayParties",
+        component: () => import("./pages/subPages/gallery6.vue"),
+    },
+    {
+        path: "/gallery/InhouseEvents",
+        name: "InhouseEvents",
+        component: () => import("./pages/subPages/gallery7.vue"),
+    },
+    {
+        path: "/gallery/AwardCeremony",
+        name: "AwardCeremony",
+        component: () => import("./pages/subPages/gallery8.vue"),
     },
 
     {

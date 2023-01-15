@@ -32,27 +32,42 @@ const toggleClass = () => {
                     class="main-menu"
                     :style="{
                         display: displayStyle,
-
                         transition: trans,
                     }"
                 >
                     <ul class="d-md-flex">
                         <li>
-                            <router-link :to="{ name: 'Home' }"
+                            <router-link
+                                :to="{ name: 'Home' }"
+                                class="nav-under"
                                 >Home</router-link
-                            >
-                        </li>
-                        <li>
-                            <router-link :to="{ name: 'About Us' }"
-                                >About Us</router-link
                             >
                         </li>
                         <li class="dropdown">
                             <span class="dropbtn">
-                                <router-link :to="{ name: 'Products' }"
+                                <router-link
+                                    :to="{ name: 'About Us' }"
+                                    class="nav-under"
+                                    >About Us</router-link
+                                >&ensp;
+                                <i class="fa fa-caret-down fa-xs" id="down"></i>
+                            </span>
+                            <div class="dropdown-content">
+                                <router-link
+                                    :to="{ name: 'Career' }"
+                                    style="bottom: 0.25px; left: 3px"
+                                    >Career</router-link
+                                >
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <span class="dropbtn">
+                                <router-link
+                                    :to="{ name: 'Products' }"
+                                    class="nav-under"
                                     >Products</router-link
                                 >&ensp;
-                                <i class="fa fa-caret-down" id="down"></i>
+                                <i class="fa fa-caret-down fa-xs" id="down"></i>
                             </span>
                             <div class="dropdown-content">
                                 <router-link :to="{ name: 'Ecommerce' }"
@@ -65,18 +80,22 @@ const toggleClass = () => {
                                 <router-link :to="{ name: 'hr' }"
                                     >HR Software</router-link
                                 >
-                                <router-link :to="{ name: 'pos' }"
+                                <router-link
+                                    :to="{ name: 'pos' }"
+                                    style="bottom: 0.25px; left: 3px"
                                     >Point Of Sales</router-link
                                 >
                             </div>
                         </li>
                         <li class="dropdown">
                             <span class="dropbtn">
-                                <router-link :to="{ name: 'Services' }"
+                                <router-link
+                                    :to="{ name: 'Services' }"
+                                    class="nav-under"
                                     >Services</router-link
                                 >&ensp;
 
-                                <i class="fa fa-caret-down" id="down"></i>
+                                <i class="fa fa-caret-down fa-xs" id="down"></i>
                             </span>
                             <div class="dropdown-content">
                                 <router-link :to="{ name: 'uiux' }"
@@ -88,29 +107,46 @@ const toggleClass = () => {
                                 <router-link :to="{ name: 'customerSoft' }"
                                     >Custom Software
                                 </router-link>
-                                <router-link :to="{ name: 'mobileApp' }"
+                                <router-link
+                                    :to="{ name: 'mobileApp' }"
+                                    style="bottom: 0.25px; left: 3px"
                                     >Mobile Application
                                 </router-link>
                             </div>
                         </li>
 
                         <li>
-                            <router-link :to="{ name: 'Project' }"
-                                >Project</router-link
+                            <router-link
+                                :to="{ name: 'Project' }"
+                                class="nav-under"
+                                >Projects</router-link
                             >
                         </li>
-                        <li>
-                            <router-link :to="{ name: 'Team' }"
-                                >Team</router-link
-                            >
+                        <li class="dropdown">
+                            <span class="dropbtn">
+                                <router-link
+                                    :to="{ name: '' }"
+                                    class="nav-under"
+                                    >Team</router-link
+                                >&ensp;
+                                <i class="fa fa-caret-down fa-xs" id="down"></i>
+                            </span>
+                            <div class="dropdown-content">
+                                <router-link :to="{ name: 'Gallery' }"
+                                    >Gallery</router-link
+                                >
+                                <router-link
+                                    :to="{ name: 'Team' }"
+                                    style="bottom: 0.25px; left: 3px"
+                                    >Our Team</router-link
+                                >
+                            </div>
                         </li>
+
                         <li>
-                            <router-link :to="{ name: 'Gallery' }"
-                                >Gallery</router-link
-                            >
-                        </li>
-                        <li>
-                            <router-link :to="{ name: 'Contact' }"
+                            <router-link
+                                :to="{ name: 'Contact' }"
+                                class="nav-under"
                                 >Contact</router-link
                             >
                         </li>

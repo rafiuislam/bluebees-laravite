@@ -3,17 +3,11 @@
 .home-banner {
     position: relative;
     margin-top: -107px;
+
     img {
         width: 100%;
-        @media (max-width: 576px) {
-            transform: scale(2);
-            padding-top: 2.5rem;
-            padding-right: 2rem;
-        }
     }
     .banner-caption {
-        .container {
-        }
         @include absolute(100%, false, left, 0, top, 50%);
         transform: translateY(-50%);
         h2 {
