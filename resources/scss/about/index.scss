@@ -17,24 +17,16 @@
         position: absolute;
         top: 266px;
         z-index: 0;
+        text-align: center;
         font-family: "Nunito Sans", sans-serif;
         @include font(white, 80, 32, regular);
     }
-    .routePara {
-        position: absolute;
-        top: 350px;
-        z-index: 0;
-        font-family: "Nunito Sans", sans-serif;
-        @include font(white, 25, 16, light);
-    }
+
     @media (max-width: 576px) {
         .routeTitle {
-            @include font(white, 40, 22, regular);
+            @include font(white, 40, 48, regular);
             top: 185px;
-        }
-        .routePara {
-            @include font(white, 16, 10, light);
-            top: 235px;
+            text-align: center;
         }
     }
 }

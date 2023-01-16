@@ -53,10 +53,11 @@ const toggleClass = () => {
                                 <i class="fa fa-caret-down fa-xs" id="down"></i>
                             </span>
                             <div class="dropdown-content">
-                                <router-link
-                                    :to="{ name: 'Career' }"
-                                    style="bottom: 0.25px; left: 3px"
+                                <router-link :to="{ name: 'Career' }"
                                     >Career</router-link
+                                >
+                                <router-link :to="{ name: 'Register' }"
+                                    >Register</router-link
                                 >
                             </div>
                         </li>
@@ -80,9 +81,7 @@ const toggleClass = () => {
                                 <router-link :to="{ name: 'hr' }"
                                     >HR Software</router-link
                                 >
-                                <router-link
-                                    :to="{ name: 'pos' }"
-                                    style="bottom: 0.25px; left: 3px"
+                                <router-link :to="{ name: 'pos' }"
                                     >Point Of Sales</router-link
                                 >
                             </div>
@@ -107,9 +106,7 @@ const toggleClass = () => {
                                 <router-link :to="{ name: 'customerSoft' }"
                                     >Custom Software
                                 </router-link>
-                                <router-link
-                                    :to="{ name: 'mobileApp' }"
-                                    style="bottom: 0.25px; left: 3px"
+                                <router-link :to="{ name: 'mobileApp' }"
                                     >Mobile Application
                                 </router-link>
                             </div>
@@ -135,9 +132,7 @@ const toggleClass = () => {
                                 <router-link :to="{ name: 'Gallery' }"
                                     >Gallery</router-link
                                 >
-                                <router-link
-                                    :to="{ name: 'Team' }"
-                                    style="bottom: 0.25px; left: 3px"
+                                <router-link :to="{ name: 'Team' }"
                                     >Our Team</router-link
                                 >
                             </div>

@@ -22,7 +22,7 @@ const props = reactive({
     <HomeBanner />
     <!-- Route Banner -->
     <img class="img-fluid bannerimg" :src="props.bannerImg" alt="" />
-    <div class="d-flex justify-content-center route">
+    <div class="d-flex justify-content-center align-items-center route">
         <p class="routeTitle">Mobile Application Development</p>
     </div>
     <section class="products-ecommerce">

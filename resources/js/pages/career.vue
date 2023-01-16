@@ -94,11 +94,13 @@ const props = reactive({
                             might be directly for a situation at PATH later on.
                         </p>
                         <div>
-                            <button
-                                class="col-lg-6 col-md-6 col-sm-12 send-btn text-center"
-                            >
-                                Submit Resume
-                            </button>
+                            <router-link :to="{ name: 'Register' }">
+                                <button
+                                    class="col-lg-6 col-md-6 col-sm-12 send-btn text-center"
+                                >
+                                    Submit Resume
+                                </button>
+                            </router-link>
                         </div>
                     </div>
                 </div>

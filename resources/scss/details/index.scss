@@ -7,7 +7,7 @@
         transform: scale(2);
         padding-top: 2.5rem;
         padding-right: 2rem;
-        top: 95px;
+        top: 65px;
     }
 }
 
@@ -22,8 +22,8 @@
 
     @media (max-width: 576px) {
         .routeTitle {
-            @include font(white, 40, 22, regular);
-            top: 185px;
+            @include font(white, 40, 48, regular);
+            top: 120px;
         }
     }
 }
