@@ -1,9 +1,7 @@
 <script setup>
 import HomeBanner from "../../components/HomeBanner.vue";
 
-import { reactive, ref, onMounted, watchEffect, nextTick } from "vue";
-import CoolLightBox from "vue-cool-lightbox";
-import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
+import { reactive, ref } from "vue";
 
 const images = ref([
     "../../images/g22.JPG",
@@ -57,28 +55,29 @@ const props = reactive({
     </div>
     <!-- project section -->
 
-    <div>
-        <CoolLightBox
-            v-if="index !== null"
-            :images="images"
-            :index="index?.value"
-            @close="index = null"
-        >
-        </CoolLightBox>
-
-        <div class="images-wrapper">
-            <div
-                href="image"
-                v-for="(image, imageIndex) in images"
-                :key="imageIndex"
-                @click="
-                    index.value === null
-                        ? (index.value = imageIndex)
-                        : (index.value = imageIndex)
-                "
-            >
-                <img :src="image" alt="" />
+    <section class="project-section gallery-details">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <h1 class="title">{{ props.title }}</h1>
+            </div>
+            <div class="d-flex justify-content-center text-center">
+                <p>
+                    {{ props.teamMsg }}
+                </p>
+            </div>
+            <div class="row">
+                <div
+                    class="col-lg-2 col-md-4 col-sm-6 col-12 text-center"
+                    v-for="(i, index) in props.image"
+                    :key="index"
+                >
+                    <div class="project-item">
+                        <div class="project-item-box">
+                            <img class="image_project" :src="i" alt="People" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>

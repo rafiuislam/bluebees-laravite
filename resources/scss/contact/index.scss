@@ -67,9 +67,7 @@
         @include font(false, 18, 30, regular);
         color: #403c3c;
     }
-    .space {
-        padding: 0px;
-    }
+
     .circle {
         position: absolute;
         border-radius: 50%;
@@ -121,7 +119,7 @@
     }
     .message {
         font-family: "Nunito Sans", sans-serif;
-        @include font(false, 22, 36, regular);
+        @include font(false, 22, 36, semi-bold);
         color: #4c4d4f;
         margin: 0 0px 75px 0px;
         width: 75%;
